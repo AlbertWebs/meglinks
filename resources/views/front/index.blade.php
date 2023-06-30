@@ -8,47 +8,35 @@
         <source src="{{asset('theme/assets/video/video.mp4')}}" type="video/mp4">
     </video>
     <div class="hero-content-1 hero-content-position">
-        <h1 class="title" data-aos="fade-up" data-aos-delay="200">DRIOR INTERIOR DESIGN</h1>
+        <h1 class="title" data-aos="fade-up" data-aos-delay="200">MEGLINKS INTERIOR DESIGN</h1>
         <p data-aos="fade-up" data-aos-delay="300">Quisque at justo sagittis, semper lacus a, iaculis tellus. Fusce tempor, leo vel iaculis aliquet, </p>
-        <a href="project.html" class="btn btn-primary btn-hover-dark" data-aos="fade-up" data-aos-delay="400">VIEW PROJECT</a>
+        <a href="project.html" class="btn btn-primary btn-hover-dark" data-aos="fade-up" data-aos-delay="400">VIEW PROJECTS <span style="color:#ffffff" class="fa fa-suitcase"></span></a>
+        <a href="project.html" class="btn btn-primary btn-hover-dark" data-aos="fade-up" data-aos-delay="400"> LEARN MORE <span style="color:#ffffff" class="fa fa-arrow-right"></span></a>
     </div>
 </div>
 <!-- About area -->
 <div class="section section-padding">
     <div class="container">
-        <div class="row row-cols-lg-2 row-cols-1 mb-n6">
-            <div class="col align-self-center mb-6">
-                <div class="about-content">
-                    <h2 class="title">Welcome to <span>Dorior</span></h2>
-                    <p>We are passionate, knowing that people live, work, play and inhabit the spaces and places we imagine and envision for our clients. To those wanting to make an impact with design.</p>
+        <div class="row row-cols-lg-1 row-cols-1 mb-n6">
+            <div class="col align-self-center mb-6 text-center">
+                <div class="about-content text-center">
+                    <h2 class="title">Welcome to <span>Meglink Ventures Limited</span></h2>
+                    <p>
+                        We are passionate, knowing that people live, work, play and inhabit the spaces and places we imagine and envision for our clients. To those wanting to make an impact with design.
+
+                        We are passionate, knowing that people live, work, play and inhabit the spaces and places we imagine and envision for our clients. To those wanting to make an impact with design.
+
+                        We are passionate, knowing that people live, work, play and inhabit the spaces and places we imagine and envision for our clients. To those wanting to make an impact with design.
+                    </p>
                 </div>
-                <div class="working-away-wrap">
-                    <div class="working-away">
-                        <div class="working-away-icon">
-                            <i class="dlicon ui-1_home-51"></i>
-                        </div>
-                        <div class="working-content">
-                            <h3 class="title">Qualified Planning</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
-                        </div>
-                    </div>
-                    <div class="working-away">
-                        <div class="working-away-icon">
-                            <i class="dlicon design_measure-big"></i>
-                        </div>
-                        <div class="working-content">
-                            <h3 class="title">Professional Design</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
-                        </div>
-                    </div>
-                </div>
+
                 <a href="about-us.html" class="btn btn-dark btn-hover-primary">LEARN MORE</a>
             </div>
-            <div class="col mb-6">
+            {{-- <div class="col mb-6">
                 <div class="about-banner">
                     <img src="{{asset('theme/assets/images/banner/banner-2.png')}}" alt="banner">
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
