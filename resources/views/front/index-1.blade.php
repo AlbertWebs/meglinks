@@ -3,22 +3,43 @@
 @section('content')
 
 <!-- Hero area -->
-<div class="hero-area overly-style-1 opacity-point-4">
-    <video class="video-active" autoplay="autoplay" loop="loop" muted="muted">
-        <source src="{{asset('theme/assets/video/video.mp4')}}" type="video/mp4">
-    </video>
-    <div class="hero-content-1 hero-content-position">
-        <h1 class="title" data-aos="fade-up" data-aos-delay="200" style="text-shadow: 1px 1px 2px black;">MEGLINKS INTERIOR DESIGN</h1>
-        <p data-aos="fade-up" data-aos-delay="300">Quisque at justo sagittis, semper lacus a, iaculis tellus. Fusce tempor, leo vel iaculis aliquet, </p>
-        <a href="project.html" class="btn btn-primary btn-hover-dark" data-aos="fade-up" data-aos-delay="400">VIEW PROJECTS <span style="color:#ffffff" class="fa fa-suitcase"></span></a>
-        <a href="project.html" class="btn btn-primary btn-hover-dark" data-aos="fade-up" data-aos-delay="400"> LEARN MORE <span style="color:#ffffff" class="fa fa-arrow-right"></span></a>
+<div class="hero-area">
+    <div class="hero-slider-active swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4" style="background-image:url('{{asset('theme/assets/images/slider/slider-1.jpg')}}')">
+                    <div class="container hover_plx">
+                        <div class="hero-content-1 slider-animated-1 text-center layer" data-depth="-0.7">
+                            <h1 class="title animated" style="text-shadow: 1px 1px 2px black;">MEGLINKS INTERIOR DESIGN</h1>
+                            <p class="animated">Quisque at justo sagittis, semper lacus a, iaculis tellus. Fusce tempor, leo vel iaculis aliquet, </p>
+                            <a href="project.html" class="btn btn-primary btn-hover-dark animated" data-aos="fade-up" data-aos-delay="400">VIEW PROJECTS <span style="color:#ffffff" class="fa fa-suitcase"></span></a>
+                            <a href="project.html" class="btn btn-primary btn-hover-dark animated" data-aos="fade-up" data-aos-delay="400"> LEARN MORE <span style="color:#ffffff" class="fa fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4" style="background-image:url('{{asset('theme/assets/images/slider/slider-2.jpg')}}')">
+                    <div class="container hover_plx">
+                        <div class="hero-content-1 slider-animated-1 text-center layer" data-depth="-0.7">
+                            <h1 class="title animated" style="text-shadow: 1px 1px 2px black;">MEGLINKS INTERIOR DESIGN</h1>
+                            <p class="animated">Quisque at justo sagittis, semper lacus a, iaculis tellus. Fusce tempor, leo vel iaculis aliquet, </p>
+                            <a href="project.html" class="btn btn-primary btn-hover-dark animated" data-aos="fade-up" data-aos-delay="400">VIEW PROJECTS <span style="color:#ffffff" class="fa fa-suitcase"></span></a>
+                            <a href="project.html" class="btn btn-primary btn-hover-dark animated" data-aos="fade-up" data-aos-delay="400"> LEARN MORE <span style="color:#ffffff" class="fa fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-slider-prev main-slider-nav"><i class="fa fa-angle-left"></i></div>
+        <div class="home-slider-next main-slider-nav"><i class="fa fa-angle-right"></i></div>
     </div>
 </div>
 <!-- About area -->
 <div class="section section-padding">
     <div class="container">
-        <div class="row text-center">
-            <div class="align-self-center text-center">
+        <div class="row row-cols-lg-1 row-cols-1 mb-n6">
+            <div class="col align-self-center mb-6 text-center">
                 <div class="about-content text-center">
                     <h2 class="title">Welcome to <span>Meglink Ventures Limited</span></h2>
                     <p>

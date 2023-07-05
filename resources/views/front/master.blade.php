@@ -56,6 +56,9 @@
                                 <li class="menu-item-has-children"><a href="{{url('/')}}">Home</a>
 
                                 </li>
+                                <li class="menu-item-has-children"><a href="{{url('/')}}/home">Home Slider</a>
+
+                                </li>
                                 <li><a href="{{url('/')}}">About Us</a>
 
                                 </li>
@@ -202,19 +205,18 @@
                             <div class="social-icon-style">
                                 <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
                                 <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                                <a class="behance" href="#"><i class="fa fa-behance"></i></a>
+                                <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+                                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-8">
+                    <div class="col mb-8 cols-lg-4">
                         <div class="footer-widget footer-list">
                             <h3 class="footer-title">Useful Link</h3>
                             <ul>
                                 <li><a href="contact.html">Privacy Policy</a></li>
                                 <li><a href="contact.html">Help & Contact Us</a></li>
                                 <li><a href="service.html">Terms of Service </a></li>
-                                <li><a href="blog.html">Our Blogs</a></li>
                                 <li><a href="contact.html">Contact Us </a></li>
                             </ul>
                         </div>
@@ -229,11 +231,11 @@
                                 </li>
                                 <li>
                                     <span class="title">E:</span>
-                                    <span class="desc">info@example.com <br>demo@example.com</span>
+                                    <span class="desc">info@meglinkventures.co.ke <br>hello@meglinkventures.co.ke</span>
                                 </li>
                                 <li>
                                     <span class="title">A:</span>
-                                    <span class="desc">962 fifth avenue, 3rd floor new york, ny10022</span>
+                                    <span class="desc">Riverside Gardens, Westlands Riverside - Nairobi - Kenya</span>
                                 </li>
                             </ul>
                         </div>
@@ -263,7 +265,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="copyright text-center">
-                    <p>Copyright © {{date('Y')}} All rights reserved | Powered By with <i class="fa fa-heart"></i> by <a href="https://designekta.com"> Designekta Studios </a>.</p>
+                    <p>Copyright © {{date('Y')}} All rights reserved | Powered By <a href="https://designekta.com"> Designekta Studios </a>.</p>
                 </div>
             </div>
         </div>

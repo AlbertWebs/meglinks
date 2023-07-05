@@ -738,6 +738,22 @@ hr {
   opacity: 0.9;
   color: #fff;
 }
+
+.social-icon-style a.linkedin {
+    background-color: #0072b1;
+  }
+  .social-icon-style a.linkedin:hover {
+    opacity: 0.9;
+    color: #fff;
+  }
+
+  .social-icon-style a.instagram {
+    background-color: #962fbf;
+  }
+  .social-icon-style a.instagram:hover {
+    opacity: 0.9;
+    color: #fff;
+  }
 .social-icon-style a.google-plus {
   background-color: #dd4b39;
 }
@@ -1163,7 +1179,7 @@ hr {
   font-weight: bold;
 }
 .about-content p {
-  width: 90%;
+  /* width: 90%; */
   margin: 20px 0 22px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
