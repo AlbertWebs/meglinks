@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     /*-----------------
         Menu Stick
     -----------------*/
@@ -14,7 +14,7 @@
             header.addClass('stick');
         }
     });
-    
+
     /*-------------------------------
        Header Search Toggle
     -----------------------------------*/
@@ -83,7 +83,7 @@
             prevEl: '.home-slider-prev , .home-slider-prev2 , .home-slider-prev3',
         }
     });
-    
+
     /*====== Brand logo active ======*/
     var brandLogo = new Swiper('.brand-logo-active', {
         slidesPerView: 5,
@@ -104,7 +104,7 @@
             }
         },
     });
-    
+
     // Project slider active
     var projectSliderActive = new Swiper('.project-slider-active', {
         slidesPerView: 4,
@@ -131,8 +131,35 @@
             }
         },
     });
-    
-    
+
+    // Project slider active
+    var projectSliderActive = new Swiper('.project-slider-actives', {
+        slidesPerView: 3,
+        loop: true,
+        navigation: {
+            nextEl: '.project-slider-next',
+            prevEl: '.project-slider-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1
+            },
+            576: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 2
+            },
+            992: {
+                slidesPerView: 3
+            },
+            1200: {
+                slidesPerView: 4
+            }
+        },
+    });
+
+
     /*====== Testimonial active ======*/
     var testimonialActive = new Swiper('.testimonial-active', {
         slidesPerView: 3,
@@ -157,7 +184,7 @@
             }
         },
     });
-    
+
     /*====== Blog active ======*/
     var blogActive = new Swiper('.blog-active', {
         slidesPerView: 3,
@@ -178,7 +205,7 @@
             }
         },
     });
-    
+
     /*--
         Hover Parallax Js
     ------------------------------------*/
@@ -189,10 +216,10 @@
             parallaxScenes.push(new Parallax(sceneElements[i]));
         }
     }
-    
-    
+
+
     /* ----------------------------
-		Odometer Activation 
+		Odometer Activation
     -------------------------------*/
 	if( $('.odometer').length ){
 		var elemOffset = $('.odometer').offset().top;
@@ -214,10 +241,10 @@
 				$('.odometer').each(function(){
 					$(this).html($(this).data('count-to'));
 				});
-			}	
+			}
 		});
 	};
-    
+
     /*====== Video active ======*/
     $('.video-banner').on('click', '.status', function(e) {
         e.preventDefault();
@@ -232,8 +259,8 @@
             video.pause();
         }
     });
-    
-   
+
+
     /*------ ScrollUp -------- */
     $.scrollUp({
         scrollText: '<i class="fa fa-angle-up"></i>',
@@ -241,8 +268,8 @@
         scrollSpeed: 900,
         animation: 'fade'
     });
-    
-    
+
+
     /*------ Image Conversion Active -------- */
     var beforeandafter = $('.beforeandafter');
     if(beforeandafter.length){
@@ -251,7 +278,7 @@
             wrapperid: 'beforeandafteractive',
         });
     }
-    
+
     /*--
     Magnific Popup
     ------------------------*/
@@ -261,15 +288,15 @@
             enabled: true
         }
     });
-    
-    
+
+
     /*------ Isotope active 2 ----*/
     $('.grid').imagesLoaded( function() {
         // filter items on button click
         $('.project-menu-active').on( 'click', 'button', function() {
             var filterValue = $(this).attr('data-filter');
             $grid2.isotope({ filter: filterValue });
-        });	
+        });
         // init Isotope
         var $grid2 = $('.grid').isotope({
             itemSelector: '.grid-item',
@@ -286,7 +313,7 @@
         $(this).addClass('active');
         event.preventDefault();
     });
-    
+
     /*-------------------------
       Scroll Animation
     --------------------------*/
@@ -294,7 +321,7 @@
         once: true,
         duration: 1000,
     });
-    
+
     /*---------------------
         Sidebar active
     --------------------- */
@@ -303,11 +330,10 @@
         bottomSpacing: 30,
         minWidth: 767,
     });
-    
-    
-    
-    
-})(jQuery);    
-    
 
-    
+
+
+
+})(jQuery);
+
+

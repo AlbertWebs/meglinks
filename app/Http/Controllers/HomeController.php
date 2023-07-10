@@ -30,4 +30,20 @@ class HomeController extends Controller
         return view('front.index-1');
     }
 
+    public function contact()
+    {
+        return view('front.contact');
+    }
+
+    public function portfolio()
+    {
+        return view('front.portfolio');
+    }
+
+    public function portfolio_slung()
+    {
+        return view('front.portfolio_details');
+    }
+
+
 }

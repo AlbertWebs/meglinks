@@ -1810,6 +1810,12 @@ hr {
   transform: translateY(-50%) scale(1);
 }
 
+.project-slider-actives:hover .project-slider-nav {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) scale(1);
+  }
+
 .sidebar-widget-title {
   font-size: 20px;
   margin: 0 0 30px;

@@ -44,8 +44,8 @@
                 <div class="col-lg-3 col-md-6 col-4">
                     <div class="logo">
                         <a href="{{url('/')}}">
-                            <img class="white-logo" src="{{asset('theme/assets/images/logo/logo.png')}}" alt="logo">
-                            <img class="black-logo" src="{{asset('theme/assets/images/logo/logo-black.png')}}" alt="logo">
+                            <img style="max-height:60px" class="white-logo" src="{{url('/')}}/uploads/fav.png" alt="logo">
+                            <img style="max-height:60px" class="black-logo" src="{{url('/')}}/uploads/fav.png" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
 
                                 </li>
 
-                                <li><a href="{{url('/')}}">Portfolio</a>
+                                <li><a href="{{url('/')}}/our-portfolio">Portfolio</a>
 
                                 </li>
 
@@ -124,7 +124,7 @@
 
                                     </li>
 
-                                    <li><a href="{{url('/')}}">Portfolio</a>
+                                    <li><a href="{{url('/')}}/our-portfolio">Portfolio</a>
 
                                     </li>
 
@@ -165,25 +165,27 @@
                         <img src="{{asset('theme/assets/images/banner/banner-1.jpg')}}" alt="banner">
                         <div class="aside-banner-add-content">
                             <h5>Ad Banner</h5>
-                            <p>info@example.com</p>
+                            <p>info@meglinkventures.co.ke</p>
                         </div>
                     </a>
                 </div>
                 <div class="aside-contact-info">
                     <ul>
-                        <li><i class="dlicon ui-1_email-84"></i>Info@example.com</li>
-                        <li><i class="dlicon tech-2_rotate"></i>(+55) 254. 254. 254</li>
+                        <li><i class="dlicon ui-1_email-84"></i>Info@meglinkventures.co.ke</li>
+                        <li><i class="dlicon tech-2_rotate"></i>(+254) 701 211 206</li>
                         <li><i class="dlicon ui-1_home-minimal"></i>Riverside Gardens, Westlands Riverside - Nairobi - Kenya</li>
                     </ul>
                 </div>
                 <div class="social-icon-style mb-5">
                     <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
                     <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
                     <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                    <a class="behance" href="#"><i class="fa fa-behance"></i></a>
+                    <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                    <a class="instagram" href="#"><i class="fa fa-pinterest"></i></a>
                 </div>
                 <div class="copyright">
-                    <p>Copyright ©2021 All rights reserved | Powered By <i class="fa fa-heart"></i> by <a href="https://designekta.com"> Designekta Studios </a>.</p>
+                    <p>Copyright © {{date('Y')}} <strong>Meglinks Ventures Limited</strong> | All rights reserved | Powered By <a href="https://designekta.com"> Designekta Studios </a>.</p>
                 </div>
             </div>
         </div>
@@ -199,14 +201,16 @@
                     <div class="col mb-8">
                         <div class="footer-widget footer-about">
                             <div class="footer-logo">
-                                <a href="{{url('/')}}"><img src="{{asset('theme/assets/images/logo/logo.png')}}" alt="logo"></a>
+                                <a href="{{url('/')}}"><img src="{{url('/')}}/uploads/image-003.png" alt="logo"></a>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text datra of the printing and typesetting industry.</p>
+                            <p>
+
+                            </p>
                             <div class="social-icon-style">
-                                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <a class="facebook" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                                <a class="twitter" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                                <a class="instagram" href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                                <a class="linkedin" href="#"><i class="fa fa-linkedin fa-2x"></i></a>
                             </div>
                         </div>
                     </div>
@@ -227,7 +231,7 @@
                             <ul>
                                 <li>
                                     <span class="title">T:</span>
-                                    <span class="desc">+012 3456 7890</span>
+                                    <span class="desc">+254 701 211 206</span>
                                 </li>
                                 <li>
                                     <span class="title">E:</span>
@@ -265,7 +269,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="copyright text-center">
-                    <p>Copyright © {{date('Y')}} All rights reserved | Powered By <a href="https://designekta.com"> Designekta Studios </a>.</p>
+                    <p>Copyright © {{date('Y')}} <strong>Meglinks Ventures Limited</strong> | All rights reserved | Powered By <a href="https://designekta.com"> Designekta Studios </a>.</p>
                 </div>
             </div>
         </div>

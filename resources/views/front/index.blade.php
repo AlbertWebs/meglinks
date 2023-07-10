@@ -9,7 +9,9 @@
     </video>
     <div class="hero-content-1 hero-content-position">
         <h1 class="title" data-aos="fade-up" data-aos-delay="200" style="text-shadow: 1px 1px 2px black;">MEGLINKS INTERIOR DESIGN</h1>
-        <p data-aos="fade-up" data-aos-delay="300">Quisque at justo sagittis, semper lacus a, iaculis tellus. Fusce tempor, leo vel iaculis aliquet, </p>
+        <p data-aos="fade-up" data-aos-delay="300" style="max-width: 500px; margin:0 auto; padding-bottom:50px">
+           Meglink Ventures is the best suited interior designer that stands out in both the local and international market. Call us now and let us do the Magic for you!
+        </p>
         <a href="project.html" class="btn btn-primary btn-hover-dark" data-aos="fade-up" data-aos-delay="400">VIEW PROJECTS <span style="color:#ffffff" class="fa fa-suitcase"></span></a>
         <a href="project.html" class="btn btn-primary btn-hover-dark" data-aos="fade-up" data-aos-delay="400"> LEARN MORE <span style="color:#ffffff" class="fa fa-arrow-right"></span></a>
     </div>
@@ -22,11 +24,11 @@
                 <div class="about-content text-center">
                     <h2 class="title">Welcome to <span>Meglink Ventures Limited</span></h2>
                     <p>
-                        We are passionate, knowing that people live, work, play and inhabit the spaces and places we imagine and envision for our clients. To those wanting to make an impact with design.
+                        We all desire that our homes, offices etc. should have a gorgeous and presentable look. We all want that anybody who enters our house, office etc should appreciate its interiors and décor. But that could only be possible if the interiors of our homes are designed in a manner which attracts appreciations and praises.
 
-                        We are passionate, knowing that people live, work, play and inhabit the spaces and places we imagine and envision for our clients. To those wanting to make an impact with design.
+                        Meglink Ventures is the best suited interior designer that stands out in both the local and international market. Call us now and let us do the Magic for you!
 
-                        We are passionate, knowing that people live, work, play and inhabit the spaces and places we imagine and envision for our clients. To those wanting to make an impact with design.
+                        We are flexible and will make the delivery of products / services at your workplace / residence or your preferred location and at your convinience!
                     </p>
                 </div>
 
