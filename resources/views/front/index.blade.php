@@ -231,24 +231,29 @@
             <h2 class="title">Latest <span> News</span></h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
         </div>
+        <?php
+            $Blog = DB::table('blogs')->get();
+        ?>
         <div class="blog-active swiper">
             <div class="swiper-wrapper">
+                @foreach ($Blog as $blog)
                 <div class="swiper-slide">
                     <div class="blog-wrap">
                         <div class="blog-img mb-2">
-                            <a href="blog-details.html"><img src="{{asset('theme/assets/images/blog/blog-1.jpg')}}" alt=""></a>
+                            <a href="blog-details.html"><img src="{{url('/')}}/uploads/blogs/{{$blog->image}}" alt=""></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <ul>
-                                    <li>January 3, 2021 /</li>
+                                    <li>{{ date('M d, Y', strtotime($blog->created_at)) }} / </li>
                                     <li><a href="#">Interior</a></li>
                                 </ul>
                             </div>
-                            <h3><a href="blog-details.html">This blog provides interior design tips.</a></h3>
+                            <h3><a href="{{url('/')}}/blogs/{{$blog->slung}}">{{$blog->title}}</a></h3>
                         </div>
                     </div>
                 </div>
+                @endforeach
                 <div class="swiper-slide">
                     <div class="blog-wrap">
                         <div class="blog-img mb-2">

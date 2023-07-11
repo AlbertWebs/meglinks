@@ -53,22 +53,22 @@
                     <div class="main-menu text-center">
                         <nav>
                             <ul>
-                                <li class="menu-item-has-children"><a href="{{url('/')}}">Home</a>
 
-                                </li>
-                                <li class="menu-item-has-children"><a href="{{url('/')}}/home">Home Slider</a>
+                                <li><a href="{{url('/')}}/home">Home</a>
 
                                 </li>
                                 <li><a href="{{url('/')}}">About Us</a>
 
                                 </li>
 
-
-
-                                <li><a href="project.html">Services</a>
+                                <?php
+                                    $Services = DB::table('services')->get();
+                                ?>
+                                <li><a href="project.html">Center Of Excellence</a>
                                     <ul class="sub-menu-style">
-                                        <li><a href="{{url('/')}}/center-of-excellence/interior-design">Interior Design</a></li>
-
+                                        @foreach ($Services as $services)
+                                        <li><a href="{{url('/')}}/center-of-excellence/{{$services->slung}}">{!!html_entity_decode($services->caption)!!}</a></li>
+                                        @endforeach
                                     </ul>
                                 </li>
 

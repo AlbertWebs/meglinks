@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
@@ -45,10 +46,19 @@ class HomeController extends Controller
         return view('front.portfolio_details');
     }
 
-    public function excellence()
+    public function excellence($slung)
     {
-        return view('front.excellence');
+        $Service = DB::table('services')->where('slung',$slung)->get();
+        return view('front.excellence', compact('Service'));
     }
+
+    public function blogs($slung)
+    {
+        $Blog = DB::table('blogs')->where('slung',$slung)->get();
+        return view('front.blogs', compact('Blog'));
+    }
+
+
 
 
 
