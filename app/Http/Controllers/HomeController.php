@@ -45,5 +45,11 @@ class HomeController extends Controller
         return view('front.portfolio_details');
     }
 
+    public function excellence()
+    {
+        return view('front.excellence');
+    }
+
+
 
 }

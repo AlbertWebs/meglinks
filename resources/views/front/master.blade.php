@@ -63,8 +63,13 @@
 
                                 </li>
 
-                                <li><a href="{{url('/')}}">Services</a>
 
+
+                                <li><a href="project.html">Services</a>
+                                    <ul class="sub-menu-style">
+                                        <li><a href="{{url('/')}}/center-of-excellence/interior-design">Interior Design</a></li>
+
+                                    </ul>
                                 </li>
 
                                 <li><a href="{{url('/')}}/our-portfolio">Portfolio</a>
