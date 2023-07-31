@@ -53,12 +53,12 @@
                 <div class="project-wrap">
                     <div class="project-inner">
                         <a class="img-zoom" href="{{asset('theme/assets/images/project/project-10.jpg')}}"><i class="dlicon arrows-1_zoom-88"></i></a>
-                        <a class="thumbnail" href="project-details.html">
+                        <a class="thumbnail" href="{{url('/')}}/our-portfolio/slung">
                             <img src="{{asset('theme/assets/images/project/project-10.jpg')}}" alt="Blog Image">
                         </a>
                         <div class="project-content">
                             <span class="category"><a href="#">Building</a></span>
-                            <h3 class="title"><a href="project-details.html">Living Room Remodeling</a></h3>
+                            <h3 class="title"><a href="{{url('/')}}/our-portfolio/slung">Living Room Remodeling</a></h3>
                         </div>
                     </div>
                 </div>
@@ -67,12 +67,12 @@
                 <div class="project-wrap">
                     <div class="project-inner">
                         <a class="img-zoom" href="{{asset('theme/assets/images/project/project-12.jpg')}}"><i class="dlicon arrows-1_zoom-88"></i></a>
-                        <a class="thumbnail" href="project-details.html">
+                        <a class="thumbnail" href="{{url('/')}}/our-portfolio/slung">
                             <img src="{{asset('theme/assets/images/project/project-12.jpg')}}" alt="Blog Image">
                         </a>
                         <div class="project-content">
                             <span class="category"><a href="#">Architecture</a></span>
-                            <h3 class="title"><a href="project-details.html">Restaurant Interior Design</a></h3>
+                            <h3 class="title"><a href="{{url('/')}}/our-portfolio/slung">Restaurant Interior Design</a></h3>
                         </div>
                     </div>
                 </div>
@@ -81,12 +81,12 @@
                 <div class="project-wrap">
                     <div class="project-inner">
                         <a class="img-zoom" href="{{asset('theme/assets/images/project/project-11.jpg')}}"><i class="dlicon arrows-1_zoom-88"></i></a>
-                        <a class="thumbnail" href="project-details.html">
+                        <a class="thumbnail" href="{{url('/')}}/our-portfolio/slung">
                             <img src="{{asset('theme/assets/images/project/project-11.jpg')}}" alt="Blog Image">
                         </a>
                         <div class="project-content">
                             <span class="category"><a href="#">Interior</a></span>
-                            <h3 class="title"><a href="project-details.html">Window Glass Replacement</a></h3>
+                            <h3 class="title"><a href="{{url('/')}}/our-portfolio/slung">Window Glass Replacement</a></h3>
                         </div>
                     </div>
                 </div>
@@ -94,13 +94,13 @@
             <div class="swiper-slide">
                 <div class="project-wrap">
                     <div class="project-inner">
-                        <a class="img-zoom" href="{{asset('theme/assets/images/project/project-13.jpg')}}"><i class="dlicon arrows-1_zoom-88"></i></a>
-                        <a class="thumbnail" href="project-details.html">
-                            <img src="{{asset('theme/assets/images/project/project-13.jpg')}}" alt="Blog Image">
+                        <a class="img-zoom" href="{{asset('theme/assets/images/project/project-12.jpg')}}"><i class="dlicon arrows-1_zoom-88"></i></a>
+                        <a class="thumbnail" href="{{url('/')}}/our-portfolio/slung">
+                            <img src="{{asset('theme/assets/images/project/project-12.jpg')}}" alt="Blog Image">
                         </a>
                         <div class="project-content">
                             <span class="category"><a href="#">Building</a></span>
-                            <h3 class="title"><a href="project-details.html">Wall Mural Painting </a></h3>
+                            <h3 class="title"><a href="{{url('/')}}/our-portfolio/slung">Wall Mural Painting </a></h3>
                         </div>
                     </div>
                 </div>
@@ -109,12 +109,12 @@
                 <div class="project-wrap">
                     <div class="project-inner">
                         <a class="img-zoom" href="{{asset('theme/assets/images/project/project-11.jpg')}}"><i class="dlicon arrows-1_zoom-88"></i></a>
-                        <a class="thumbnail" href="project-details.html">
+                        <a class="thumbnail" href="{{url('/')}}/our-portfolio/slung">
                             <img src="{{asset('theme/assets/images/project/project-11.jpg')}}" alt="Blog Image">
                         </a>
                         <div class="project-content">
                             <span class="category"><a href="#">Interior</a></span>
-                            <h3 class="title"><a href="project-details.html">Living Room Interior Design</a></h3>
+                            <h3 class="title"><a href="{{url('/')}}/our-portfolio/slung">Living Room Interior Design</a></h3>
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                     <div class="single-testimonial-wrapper">
                         <div class="testimonial-img-title">
                             <div class="testimonial-img">
-                                <img src="{{asset('theme/assets/images/testimonial/client-1.png')}}" alt="">
+                                <img src="{{asset('theme/assets/images/testimonial/client-2.png')}}" alt="">
                             </div>
                             <div class="testimonial-title">
                                 <h4>Emma Hayes</h4>
@@ -190,7 +190,7 @@
                     <div class="single-testimonial-wrapper">
                         <div class="testimonial-img-title">
                             <div class="testimonial-img">
-                                <img src="{{asset('theme/assets/images/testimonial/client-3.png')}}" alt="">
+                                <img src="{{asset('theme/assets/images/testimonial/client-2.png')}}" alt="">
                             </div>
                             <div class="testimonial-title">
                                 <h4>Emma Hayes</h4>

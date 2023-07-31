@@ -93,7 +93,6 @@
 
                         @endif
 
-
                         <?php
                             $Next = $blog->id+1;
                         ?>
