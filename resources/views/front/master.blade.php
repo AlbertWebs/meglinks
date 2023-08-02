@@ -57,7 +57,7 @@
                                 <li><a href="{{url('/')}}/home">Home</a>
 
                                 </li>
-                                <li><a href="{{url('/')}}">About Us</a>
+                                <li><a href="{{url('/')}}/about-us">About Us</a>
 
                                 </li>
 
@@ -223,10 +223,12 @@
                         <div class="footer-widget footer-list">
                             <h3 class="footer-title">Useful Link</h3>
                             <ul>
-                                <li><a href="contact.html">Privacy Policy</a></li>
-                                <li><a href="contact.html">Help & Contact Us</a></li>
-                                <li><a href="service.html">Terms of Service </a></li>
-                                <li><a href="contact.html">Contact Us </a></li>
+                                <li><a href="{{url('/')}}/about-us">About Us </a></li>
+                                @foreach ($Services as $services)
+                                <li><a href="{{url('/')}}/center-of-excellence/{{$services->slung}}">{!!html_entity_decode($services->caption)!!}</a></li>
+                                @endforeach
+                                <li><a href="{{url('/')}}/our-portfolio">Portfolio </a></li>
+                                <li><a href="{{url('/')}}/contact-us">Contact Us </a></li>
                             </ul>
                         </div>
                     </div>

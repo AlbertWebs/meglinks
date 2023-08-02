@@ -41,6 +41,13 @@ class HomeController extends Controller
         return view('front.portfolio');
     }
 
+    public function about()
+    {
+        return view('front.about');
+    }
+
+
+
     public function portfolio_slung()
     {
         return view('front.portfolio_details');
