@@ -2,6 +2,7 @@
 
 @section('content')
 
+@if($hero == "video")
 <!-- Hero area -->
 <div class="hero-area overly-style-1 opacity-point-4">
     <video class="video-active" autoplay="autoplay" loop="loop" muted="muted">
@@ -16,6 +17,46 @@
         <a href="project.html" class="btn btn-primary btn-hover-dark" data-aos="fade-up" data-aos-delay="400"> LEARN MORE <span style="color:#ffffff" class="fa fa-arrow-right"></span></a>
     </div>
 </div>
+
+@else
+<!-- Hero area -->
+<div class="hero-area">
+    <div class="hero-slider-active swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4" style="background-image:url('{{asset('uploads/sliders/42.jpg')}}')">
+                    <div class="container hover_plx">
+                        <div class="hero-content-1 slider-animated-1 text-center layer" data-depth="-0.7">
+                            <h1 class="title animated" style="text-shadow: 1px 1px 2px black;">MEGLINKS VENTURES LIMITED</h1>
+                            <p class="animated" data-aos="fade-up" data-aos-delay="300" style="max-width: 500px; margin:0 auto; padding-bottom:50px">
+                                Meglink Ventures is the best suited interior designer that stands out in both the local and international market. Call us now and let us do the Magic for you!
+                             </p>
+                            <a href="project.html" class="btn btn-primary btn-hover-dark animated" data-aos="fade-up" data-aos-delay="400">VIEW PROJECTS <span style="color:#ffffff" class="fa fa-suitcase"></span></a>
+                            <a href="project.html" class="btn btn-primary btn-hover-dark animated" data-aos="fade-up" data-aos-delay="400"> LEARN MORE <span style="color:#ffffff" class="fa fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="intro-section height-100vh slider-content-center bg-img single-animation-wrap slider-bg-color-1 overly-style-1 opacity-point-4" style="background-image:url('{{asset('uploads/sliders/45.jpg')}}')">
+                    <div class="container hover_plx">
+                        <div class="hero-content-1 slider-animated-1 text-center layer" data-depth="-0.7">
+                            <h1 class="title animated" style="text-shadow: 1px 1px 2px black;">MEGLINKS VENTURES LIMITED</h1>
+                            <p class="animated" data-aos="fade-up" data-aos-delay="300" style="max-width: 500px; margin:0 auto; padding-bottom:50px">
+                                Meglink Ventures is the best suited interior designer that stands out in both the local and international market. Call us now and let us do the Magic for you!
+                             </p>
+                            <a href="project.html" class="btn btn-primary btn-hover-dark animated" data-aos="fade-up" data-aos-delay="400">VIEW PROJECTS <span style="color:#ffffff" class="fa fa-suitcase"></span></a>
+                            <a href="project.html" class="btn btn-primary btn-hover-dark animated" data-aos="fade-up" data-aos-delay="400"> LEARN MORE <span style="color:#ffffff" class="fa fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-slider-prev main-slider-nav"><i class="fa fa-angle-left"></i></div>
+        <div class="home-slider-next main-slider-nav"><i class="fa fa-angle-right"></i></div>
+    </div>
+</div>
+@endif
 <!-- About area -->
 <div class="section section-padding">
     <div class="container">
@@ -129,7 +170,7 @@
     <div class="container">
         <div class="section-title text-center mb-lg-9 mb-md-7 mb-5">
             <h2 class="title">Interior Design <span> Conversion</span></h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <p>Here we shall showcase the before and after for renovation or conversion projects at random order that shows a new project for every refresh</p>
         </div>
         <div id="beforeandafteractive" class="beforeandafter image-width-height beforeandafter-style">
             <div class="before1">
@@ -148,7 +189,7 @@
     <div class="container">
         <div class="section-title text-center mb-lg-9 mb-md-7 mb-5">
             <h2 class="title white">WHAT <span> CLIENTS</span> SAY?</h2>
-            <p class="white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <p class="white">Do we really need testimonials?  Client testimonials will populate this part of the home page, Rather we would use google my business reviews API to populate this section</p>
         </div>
         <div class="testimonial-active swiper">
             <div class="swiper-wrapper">
@@ -160,7 +201,7 @@
                             </div>
                             <div class="testimonial-title">
                                 <h4>Emma Hayes</h4>
-                                <span>Ui/UX Designer</span>
+                                <span>Sales Manager</span>
                             </div>
                         </div>
                         <p>There are many variations of passages of Lorem Ipsum available, the majority have suffered in some humou.</p>
@@ -177,7 +218,7 @@
                             </div>
                             <div class="testimonial-title">
                                 <h4>Deborah Berry</h4>
-                                <span>Web Developer</span>
+                                <span>CEO</span>
                             </div>
                         </div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.</p>
@@ -194,7 +235,7 @@
                             </div>
                             <div class="testimonial-title">
                                 <h4>Emma Hayes</h4>
-                                <span>CEO & Founder</span>
+                                <span>COO</span>
                             </div>
                         </div>
                         <p>It is a long established fact that a reader will be distracted the readable content of a page when looking.</p>
@@ -229,7 +270,7 @@
     <div class="container">
         <div class="section-title text-center mb-lg-9 mb-md-7 mb-5">
             <h2 class="title">Latest <span> News</span></h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <p>Here we write as many as possible articles to compliment the site to update as backlinks, Articles will be written every week or twice weekly as bulk to generate more traction as backlinks</p>
         </div>
         <?php
             $Blog = DB::table('blogs')->get();

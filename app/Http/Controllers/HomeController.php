@@ -24,11 +24,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('front.index');
+        $hero = "video";
+        return view('front.index', compact('hero'));
     }
     public function home()
     {
-        return view('front.index-1');
+        $hero = "slider";
+        return view('front.index', compact('hero'));
     }
 
     public function contact()

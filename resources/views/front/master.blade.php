@@ -5,12 +5,36 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Meglink Ventures Limited - Interior Design Company in Kenya</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{url('/')}}/uploads/favicon.png">
+
+    {{--  --}}
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+    <meta name="subject" content="Meglink Ventures Limited - Interior Design Company in Kenya">
+    <meta name="rating" content="General">
+    <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#1c2c52">
+    <title>Meglink Ventures Limited - Interior Design Company in Kenya</title>
+    <meta name="description" content="Meglink Ventures is the best suited interior designer that stands out in both the local and international market. Call us now and let us do the Magic for you">
+    <link rel="canonical" href="https://meglinkventures.co.ke"/>
+    <meta property="og:description" content="Meglink Ventures is the best suited interior designer that stands out in both the local and international market. Call us now and let us do the Magic for you" />
+    <meta property="og:title" content="Meglink Ventures Limited - Interior Design Company in Kenya" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://meglinkventures.co.ke" />
+
+    <meta property="og:image" content="https://meglinkventures.co.ke/public/uploads/fav.png" />
+    <meta property="og:site_name" content="meglinkventures Computers Limited">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:title" content="Meglink Ventures Limited - Interior Design Company in Kenya" />
+    <meta name="twitter:site" content="@meglinkventuresC" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@meglinkventuresC">
+    <meta name="twitter:url" content="https://meglinkventures.co.ke">
+    <meta name="twitter:description" content="Meglink Ventures is the best suited interior designer that stands out in both the local and international market. Call us now and let us do the Magic for you">
+    <meta name="twitter:image" content="https://meglinkventures.co.ke/public/uploads/fav.png">
+    {{--  --}}
 
     <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
 
@@ -54,9 +78,10 @@
                         <nav>
                             <ul>
 
-                                <li><a href="{{url('/')}}/home">Home</a>
+                                <li><a href="{{url('/')}}/home">Carousel</a>
 
                                 </li>
+
                                 <li><a href="{{url('/')}}/about-us">About Us</a>
 
                                 </li>
@@ -64,7 +89,7 @@
                                 <?php
                                     $Services = DB::table('services')->get();
                                 ?>
-                                <li><a href="project.html">Center Of Excellence</a>
+                                <li><a href="#">Center Of Excellence</a>
                                     <ul class="sub-menu-style">
                                         @foreach ($Services as $services)
                                         <li><a href="{{url('/')}}/center-of-excellence/{{$services->slung}}">{!!html_entity_decode($services->caption)!!}</a></li>
@@ -167,9 +192,9 @@
                 </div> --}}
                 <div class="aside-banner-wrap">
                     <a href="project-details.html">
-                        <img src="{{asset('theme/assets/images/banner/banner-1.jpg')}}" alt="banner">
+                        <img src="{{asset('uploads/images/5.jpg')}}" alt="Meglink Ventures Limited">
                         <div class="aside-banner-add-content">
-                            <h5>Ad Banner</h5>
+                            <h5>Elegance at Its Best</h5>
                             <p>info@meglinkventures.co.ke</p>
                         </div>
                     </a>

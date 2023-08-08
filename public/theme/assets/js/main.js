@@ -75,6 +75,7 @@
     // Hero slider active
     var heroSliderActive = new Swiper('.hero-slider-active', {
         loop: true,
+        // autoplay: true,
         speed: 750,
         effect: 'fade',
         slidesPerView: 1,
