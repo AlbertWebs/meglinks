@@ -9,7 +9,7 @@
         <source src="{{asset('theme/assets/video/video.mp4')}}" type="video/mp4">
     </video>
     <div class="hero-content-1 hero-content-position">
-        <h1 class="title" data-aos="fade-up" data-aos-delay="200" style="text-shadow: 1px 1px 2px black;">MEGLINK VENTURES LIMITED</h1>
+        <h1 class="title" data-aos="fade-up" data-aos-delay="200" style="color:#f37920; text-shadow: 1px 1px 2px black;">MEGLINK VENTURES LIMITED</h1>
         <p data-aos="fade-up" data-aos-delay="300" style="max-width: 500px; margin:0 auto; padding-bottom:50px">
            Meglink Ventures is the best suited interior designer that stands out in both the local and international market. Call us now and let us do the Magic for you!
         </p>
