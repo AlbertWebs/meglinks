@@ -48,6 +48,11 @@ class HomeController extends Controller
         return view('front.about');
     }
 
+    public function project_details()
+    {
+        return view('front.project_details');
+    }
+
 
 
     public function portfolio_slung()

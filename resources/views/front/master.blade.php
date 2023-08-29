@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="zxx">
 
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{url('/')}}/uploads/favicon.png">
-
-    {{--  --}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow"><!-- Google Specific -->
     <meta name="subject" content="Meglink Ventures Limited - Interior Design Company in Kenya">
@@ -34,302 +29,218 @@
     <meta name="twitter:url" content="https://meglinkventures.co.ke">
     <meta name="twitter:description" content="Meglink Ventures is the best suited interior designer that stands out in both the local and international market. Call us now and let us do the Magic for you">
     <meta name="twitter:image" content="https://meglinkventures.co.ke/public/uploads/fav.png">
-    {{--  --}}
+    <link rel="shortcut icon" type="image/x-icon" href="{{url('/')}}/uploads/favicon.png">
 
-    <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
+    <!-- CSS Files
+    ================================================== -->
+    <link href="{{asset('themes/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" id="bootstrap" />
+    <link href="{{asset('themes/css/bootstrap-grid.min.css')}}" rel="stylesheet" type="text/css" id="bootstrap-grid" />
+    <link href="{{asset('themes/css/bootstrap-reboot.min.css')}}" rel="stylesheet" type="text/css" id="bootstrap-reboot" />
+    <link href="{{asset('themes/css/plugins.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('themes/css/style.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('themes/css/color.css')}}" rel="stylesheet" type="text/css">
 
-    <!-- Font CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/{{url('/')}}">
-    <link rel="preconnect" href="https://fonts.gstatic.com/{{url('/')}}" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- custom background -->
+    <link rel="stylesheet" href="{{asset('themes/css/bg.css')}}" type="text/css">
 
-    <!-- Vendor CSS (Bootstrap & Icon Font) -->
-    <link rel="stylesheet" href="{{asset('theme/assets/css/vendor/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('theme/assets/css/vendor/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('theme/assets/css/vendor/dlicon.css')}}">
-    <!-- Plugins CSS (All Plugins Files) -->
-    <link rel="stylesheet" href="{{asset('theme/assets/css/plugins/swiper-bundle.min.css')}}">
-    <link rel="stylesheet" href="{{asset('theme/assets/css/plugins/animate.css')}}">
-    <link rel="stylesheet" href="{{asset('theme/assets/css/plugins/aos.css')}}">
-    <link rel="stylesheet" href="{{asset('theme/assets/css/plugins/odometer-theme-default.min.css')}}">
-    <link rel="stylesheet" href="{{asset('theme/assets/css/plugins/ddbeforeandafter.css')}}">
-    <link rel="stylesheet" href="{{asset('theme/assets/css/plugins/magnific-popup.css')}}">
+    <!-- color scheme -->
+	<link rel="stylesheet" href="{{asset('themes/css/colors/yellow.css')}}" type="text/css" id="colors">
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="{{asset('theme/assets/css/style.css')}}">
+    <!-- RS5.0 Stylesheet -->
+    <link rel="stylesheet" href="{{asset('themes/revolution/css/settings.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('themes/revolution/css/layers.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('themes/revolution/css/navigation.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('themes/css/rev-settings.css')}}" type="text/css">
 
+	<!-- custom style -->
+	<link rel="stylesheet" href="{{asset('themes/css/custom-interior-design.css')}}" type="text/css">
 </head>
 
-<body>
-    <header class="header-area header-transparent-bar sticky-bar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-md-6 col-4">
-                    <div class="logo">
-                        <a href="{{url('/')}}">
-                            <img style="max-height:60px" class="white-logo" src="{{url('/')}}/uploads/fav.png" alt="logo">
-                            <img style="max-height:60px" class="black-logo" src="{{url('/')}}/uploads/fav.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-none d-lg-block d-flex justify-content-center">
-                    <div class="main-menu text-center">
-                        <nav>
-                            <ul>
+<body id="homepage" class="de_light">
 
-                                <li><a href="{{url('/')}}/home">Carousel</a>
+    <div id="wrapper">
 
-                                </li>
-
-                                <li><a href="{{url('/')}}/about-us">About Us</a>
-
-                                </li>
-
-                                <?php
-                                    $Services = DB::table('services')->get();
-                                ?>
-                                <li><a href="#">Center Of Excellence</a>
-                                    <ul class="sub-menu-style">
-                                        @foreach ($Services as $services)
-                                        <li><a href="{{url('/')}}/center-of-excellence/{{$services->slung}}">{!!html_entity_decode($services->caption)!!}</a></li>
-                                        @endforeach
-                                    </ul>
-                                </li>
-
-                                <li><a href="{{url('/')}}/our-portfolio">Portfolio</a>
-
-                                </li>
-
-
-                                <li><a href="{{url('/')}}/contact-us">Contact Us </a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-8">
-                    <div class="header-action-wrap">
-                        {{-- <a style="color:#ea622b; font-size:20px" href="{{url('/')}}/contact-us"><span class="fa fa-phone 2x"></span> 254723014032 </a> &nbsp; &nbsp; &nbsp; --}}
-                        <div class="header-action-style header-search-1">
-
-                            <a class="search-toggle" href="#">
-                                <i class="dlicon ui-1_zoom s-open"></i>
-                                <i class="dlicon ui-1_simple-remove s-close"></i>
-                            </a>
-                            <div class="search-wrap-1">
-                                <form action="#">
-                                    <input placeholder="Search" type="text">
-                                    <button class="button-search"><i class="dlicon ui-1_zoom"></i></button>
-                                </form>
+        <!-- header begin -->
+        <header class="transparent">
+            <div class="info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="column">Working Hours Monday - Friday <span class="id-color"><strong>08:00-16:00</strong></span></div>
+                            <div class="column">Toll Free <span class="id-color"><strong>1800.899.900</strong></span></div>
+                            <!-- social icons -->
+                            <div class="column social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-envelope-o"></i></a>
                             </div>
-                        </div>
-                        <div class="header-action-style">
-                            <a class="header-aside-button" href="#"><i class="dlicon ui-3_menu-left"></i></a>
+                            <!-- social icons close -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- aside start -->
-    <div class="header-aside-active">
-        <div class="header-aside-wrap">
-            <a class="aside-close"><i class="dlicon ui-1_simple-remove"></i></a>
-            <div class="header-aside-content">
-                <div class="mobile-menu-area">
-                    <div class="mobile-menu-wrap">
-                        <!-- mobile menu start -->
-                        <div class="mobile-navigation">
-                            <!-- mobile menu navigation start -->
-                            <nav>
-                                <ul class="mobile-menu">
-                                    <li class="menu-item-has-children"><a href="{{url('/')}}">HOME</a>
 
-                                    </li>
-                                    <li><a href="{{url('/')}}">About Us</a>
-
-                                    </li>
-
-                                    <li><a href="{{url('/')}}">Services</a>
-
-                                    </li>
-
-                                    <li><a href="{{url('/')}}/our-portfolio">Portfolio</a>
-
-                                    </li>
-
-
-                                    <li><a href="{{url('/')}}/contact-us">Contact Us </a></li>
-                                </ul>
-                            </nav>
-                            <!-- mobile menu navigation end -->
-                        </div>
-                        <!-- mobile menu end -->
-                    </div>
-                </div>
-                {{-- <div class="header-aside-menu">
-                    <nav>
-                        <ul>
-                            <li class="menu-item-has-children"><a href="{{url('/')}}">HOME</a>
-
-                            </li>
-                            <li><a href="{{url('/')}}">About Us</a>
-
-                            </li>
-
-                            <li><a href="{{url('/')}}">Services</a>
-
-                            </li>
-
-                            <li><a href="{{url('/')}}">Portfolio</a>
-
-                            </li>
-
-
-                            <li><a href="{{url('/')}}/contact-us">Contact Us </a></li>
-                        </ul>
-                    </nav>
-                </div> --}}
-                <div class="aside-banner-wrap">
-                    <a href="project-details.html">
-                        <img src="{{asset('uploads/images/5.jpg')}}" alt="Meglink Ventures Limited">
-                        <div class="aside-banner-add-content">
-                            <h5>Elegance at Its Best</h5>
-                            <p>info@meglinkventures.co.ke</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="aside-contact-info">
-                    <ul>
-                        <li><i class="dlicon ui-1_email-84"></i>Info@meglinkventures.co.ke</li>
-                        <li><i class="dlicon tech-2_rotate"></i>(+254) 701 211 206</li>
-                        <li><i class="dlicon ui-1_home-minimal"></i>Riverside Gardens, Westlands Riverside - Nairobi - Kenya</li>
-                    </ul>
-                </div>
-                <div class="social-icon-style mb-5">
-                    <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
-                    <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                    <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                    <a class="instagram" href="#"><i class="fa fa-pinterest"></i></a>
-                </div>
-                <div class="copyright">
-                    <p>Copyright © {{date('Y')}} <strong>Meglinks Ventures Limited</strong> | All rights reserved | Powered By <a href="https://designekta.com"> Designekta Studios </a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    @yield('content')
-
-    <!-- Footer area -->
-    <footer class="section bg-black">
-        <div class="footer-top section-padding">
             <div class="container">
-                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n8">
-                    <div class="col mb-8">
-                        <div class="footer-widget footer-about">
-                            <div class="footer-logo">
-                                <a href="{{url('/')}}"><img src="{{url('/')}}/uploads/image-003.png" alt="logo"></a>
-                            </div>
-                            <p>
+                <div class="row">
+                    <div class="col-md-12">
+                    	<div class="md-flex">
+	                        <!-- logo begin -->
+	                        <div id="logo">
+	                            <a href="{{url('/')}}">
+	                                <img class="logo" style="max-height:60px" src="{{url('/')}}/uploads/fav.png" alt="">
+	                            </a>
+	                        </div>
+	                        <!-- logo close -->
 
-                            </p>
-                            <div class="social-icon-style">
-                                <a class="facebook" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                                <a class="twitter" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                                <a class="instagram" href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                                <a class="linkedin" href="#"><i class="fa fa-linkedin fa-2x"></i></a>
-                            </div>
+	                        <!-- small button begin -->
+	                        <span id="menu-btn"></span>
+	                        <!-- small button close -->
+
+	                        <!-- mainmenu begin -->
+                        	<div class="md-flex-col">
+								<nav class="md-flex">
+									<ul id="mainmenu" class="no-separator">
+										<li><a href="{{url('/')}}">Home<span></span></a>
+
+										</li>
+
+                                        <li><a href="{{url('/')}}">About Us<span></span></a>
+
+										</li>
+
+                                        <?php
+                                        $Services = DB::table('services')->get();
+                                        ?>
+                                        <li><a href="#">Center Of Excellence</a>
+                                            <ul class="sub-menu-style">
+                                                @foreach ($Services as $services)
+                                                <li><a href="{{url('/')}}/center-of-excellence/{{$services->slung}}">{!!html_entity_decode($services->caption)!!}</a></li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                        <li><a href="{{url('/contact-us')}}">Portfolio</a>
+
+										</li>
+
+                                        <li><a href="{{url('/')}}/our-portfolio">Laterst News</a>
+
+                                        </li>
+
+										<li><a href="{{url('/contact-us')}}">Contact</a>
+
+										</li>
+									</ul>
+								</nav>
+								<!-- mainmenu close -->
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+       @yield('content')
+
+        <!-- footer begin -->
+        <footer class="style-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h3>Meglink Ventures Limited</h3>
+                        We all desire that our homes, offices etc. should have a gorgeous and presentable look. We all want that anybody who enters our house, office etc should appreciate its interiors and décor. But that could only be possible if the interiors of our homes are designed in a manner which attracts appreciations and praises.
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget widget_recent_post">
+                            <h3>Latest News</h3>
+                            <ul>
+                                <li><a href="#">The Essentials Interior Design Tips</a></li>
+                                <li><a href="#">Functional Wall-to-Wall Shelves</a></li>
+                                <li><a href="#">9 Unique Ways to Display Your TV</a></li>
+                                <li><a href="#">The 5 Secrets to Minimal Design</a></li>
+                                <li><a href="#">Make a Huge Impact With Multiples</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col mb-8 cols-lg-4">
-                        <div class="footer-widget footer-list">
-                            <h3 class="footer-title">Useful Link</h3>
+
+                    <div class="col-lg-3">
+                        <div class="widget widget_recent_post">
+                            <h3>Our Services</h3>
                             <ul>
-                                <li><a href="{{url('/')}}/about-us">About Us </a></li>
                                 @foreach ($Services as $services)
                                 <li><a href="{{url('/')}}/center-of-excellence/{{$services->slung}}">{!!html_entity_decode($services->caption)!!}</a></li>
                                 @endforeach
-                                <li><a href="{{url('/')}}/our-portfolio">Portfolio </a></li>
-                                <li><a href="{{url('/')}}/contact-us">Contact Us </a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col mb-8">
-                        <div class="footer-widget footer-list">
-                            <h3 class="footer-title">Contact Us</h3>
-                            <ul>
-                                <li>
-                                    <span class="title">T:</span>
-                                    <span class="desc">+254 701 211 206</span>
-                                </li>
-                                <li>
-                                    <span class="title">E:</span>
-                                    <span class="desc">info@meglinkventures.co.ke <br>hello@meglinkventures.co.ke</span>
-                                </li>
-                                <li>
-                                    <span class="title">A:</span>
-                                    <span class="desc">Riverside Gardens, Westlands Riverside - Nairobi - Kenya</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col mb-8">
-                        <div class="footer-widget footer-newsletter">
-                            <h3 class="footer-title">Newsletter</h3>
-                            <p>Get E-mail updates about our latest newa and special offers.</p>
-                            <div id="mc_embed_signup" class="subscribe-form">
-                                <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank" name="mc-embedded-subscribe-form" method="post" action="https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
-                                    <div id="mc_embed_signup_scroll" class="mc-form">
-                                        <input class="email" type="email" required="" placeholder="Enter your email here.." name="EMAIL" value="">
-                                        <div class="mc-news" aria-hidden="true">
-                                            <input type="text" value="" tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
-                                        </div>
-                                        <div class="clear">
-                                            <input id="mc-embedded-subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+
+                    <div class="col-lg-3">
+                        <h3>Contact Us</h3>
+                        <div class="widget widget-address">
+                            <address>
+                                <span>Riverside Gardens, Westlands Riverside - Nairobi - Kenya</span>
+                                {{-- <span><strong>Phone:</strong>+254 701 211 206</span> --}}
+                                <span><strong>Mobile:</strong>+254 701 211 206</span>
+                                <span><strong>Email:</strong><a href="mailto:hello@meglinkventures.co.ke">hello@meglinkventures.co.ke</a></span>
+                                <span><strong>Web:</strong><a href="#">http://meglinkventures.co.ke</a></span>
+                            </address>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
             <div class="container">
-                <div class="copyright text-center">
-                    <p>Copyright © {{date('Y')}} <strong>Meglinks Ventures Limited</strong> | All rights reserved | Powered By <a href="https://designekta.com"> Designekta Studios </a>.</p>
+                <div class="row align-items-middle">
+                    <div class="col-md-3">
+                        <img width="80" src="{{asset('uploads/fav.png')}}" class="logo-small" alt=""><br>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        &copy; Copyright {{date('Y')}} - <span class="id-color">Meglink Ventures Limited</span> All Rights Reserved | Powered By <span class="id-color">Designekta Studios</span>
+                    </div>
+
+                    <div class="col-md-3 text-right">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
 
-    <!-- JS Vendor, Plugins & Activation Script Files -->
 
-    <!-- Vendors JS -->
-    <script src="{{asset('theme/assets/js/vendor/modernizr-3.11.7.min.js')}}"></script>
-    <script src="{{asset('theme/assets/js/vendor/jquery-3.6.0.min.js')}}"></script>
-    <script src="{{asset('theme/assets/js/vendor/jquery-migrate-3.3.2.min.js')}}"></script>
-    <script src="{{asset('theme/assets/js/vendor/bootstrap.bundle.min.js')}}"></script>
+            <a href="#" id="back-to-top"></a>
+        </footer>
+            <!-- footer close -->
+    </div>
 
-    <!-- Plugins JS -->
-    <script src="{{asset('theme/assets/js/plugins/swiper-bundle.min.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/hoverparallax.min.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/scrollup.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/odometer.min.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/ddbeforeandafter.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/magnific-popup.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/imagesloaded.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/isotope.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/aos.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/sticky-sidebar.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins/ajax-mail.js')}}"></script>
 
-    <!-- Activation JS -->
-    <script src="{{asset('theme/assets/js/main.js')}}"></script>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="{{asset('themes/js/plugins.js')}}"></script>
+    <script src="{{asset('themes/js/designesia.js')}}"></script>
+    <script src="{{asset('themes/js/jquery.plugin.js')}}"></script>
+    <script src="{{asset('themes/js/jquery.countdown.js')}}"></script>
+    <script src="{{asset('themes/js/countdown-custom.js')}}"></script>
+    <script src="{{asset('themes/js/jquery.event.move.js')}}"></script>
+    <script src="{{asset('themes/js/jquery.twentytwenty.js')}}"></script>
+
+    <!-- SLIDER REVOLUTION SCRIPTS  -->
+    <script src="{{asset('themes/rs-plugin/js/jquery.themepunch.plugins.min.js')}}"></script>
+    <script src="{{asset('themes/rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script>
+
+	<script>
+    $(window).on("load", function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.5, orientation: 'vertical'});
+    });
+    </script>
 
 </body>
 
