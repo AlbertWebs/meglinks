@@ -1,26 +1,54 @@
-@extends('front.master')
+@extends('front.master-one')
 
 @section('content')
 
 <!-- content begin -->
 <div id="content" class="no-bottom no-top">
 
-    <section id="section-hero" class="jarallax text-light" aria-label="section">
-        <img src="{{asset('uploads/banners/37.jpg')}}" class="jarallax-img" alt="">
+    {{-- <section id="section-hero" class="jarallax text-light full-height" data-speed="5" data-type="background" aria-label="section">
+               <img style="min-height:100% !important" src="{{asset('uploads/banners/37.jpg')}}" class="jarallax-img" alt="">
         <div class="container">
                 <div class="row">
                     <div class="spacer-double"></div>
-                    <div class="col-lg-6 mb-sm-30" >
-                        <h3 style="text-shadow: 0px 0px 0px  #f37920 !important; font-weight:900;">Meglink Ventures Limited</h3>
-                        <h1 class="ultra-big" style="text-shadow: 0px 0px 0px  #f37920 !important;">Exquisite Functional Designs</h1>
+                    <div class="spacer-double"></div>
+                    <div class="spacer-double"></div>
+                    <div class="col-lg-12 mb-sm-30" >
+
+                        <h1 class="ultra-big" style="text-shadow: 0px 1px 0px  #000000 !important; color:#f37920 !important; text-align:center">
+                            Meglink Ventures Limited
+                        </h1>
                     </div>
-                    <div class="col-lg-6 offset-lg-6 mb-sm-30">
-                        <p class="lead big" style="font-weight:900;">We are passionate about transforming spaces into stunning, functional, and personalized environments. With years of experience in the industry, we specialize in creating exceptional interior designs that reflect our clients unique style and meet their specific needs.</p class="lead big">
-                    </div>
+
                 </div>
             </div>
-    </section>
+            <a href="#section-about" class="scroll-to">
+                <span class="mouse">
+                     <span class="scroll"></span>
+                </span>
+            </a>
+    </section> --}}
     <!-- section close -->
+
+    <section id="section-welcome" class="full-height" data-bgimage="url('{{asset('themes/images/background/bg-4.jpg')}}')" data-stellar-background-ratio=".2">
+
+        <div class="center-y text-center">
+
+            <div class="spacer-single"></div>
+
+            <h1 class="ultra-big" style="text-shadow: 0px 1px 0px  #000000 !important; color:#f37920 !important; text-align:center">
+                Meglink Ventures <br> Limited
+            </h1>
+
+            <div class="spacer-double"></div>
+            <div class="spacer-double"></div>
+        </div>
+
+        <a href="#section-about" class="scroll-to">
+            <span class="mouse">
+                 <span class="scroll"></span>
+            </span>
+        </a>
+    </section>
 
     <section id="section-text">
         <div class="container">
@@ -42,6 +70,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <section data-bgimage="url('{{asset('uploads/banners/Untitled.jpeg')}}')" class="text-light" data-stellar-background-ratio=".6">
@@ -60,7 +89,7 @@
                             After: A stunning transformation took place, breathing new life into the interior. The room now exudes a sense of modern elegance and tranquility. The color palette incorporates soft neutrals and calming blues, reflecting light and creating an airy ambiance.
                         </p>
                         <div class="spacer10"></div>
-                        <a href="#" class="btn-line-white">View Details</a>
+                        <a style="border:solid #f37920" href="#" class="btn-line-white selected">View Details</a>
                     </div>
                 </div>
 
@@ -77,8 +106,8 @@
 
 
 
-    <section id="section-no-bg">
-        <div class="container">
+    <section id="section-no-bg" >
+        <div class="container" id="section-about">
         <div class="row align-items-center">
                 <div class="col-md-5 wow fadeInRight" data-wow-delay=".2s">
                     <h2>Expericence Elegance Beyond </h2>
@@ -90,7 +119,7 @@
                         Call us now and let us do the Magic for you! We are flexible and will make the delivery of products / services at your workplace / residence or your preferred location and at your convinience!
                     </p>
                     <div class="spacer-half"></div>
-                    <a href="tel:+254 701 211 206" class="btn-line-white" style="border:1px solid #f37920; color:#f37920">Contact Us Now</a>
+                    <a href="tel:+254 701 211 206" class="btn-line-white" style="border:2px solid #f37920; color:#f37920">Contact Us Now</a>
                 </div>
                 <div class="col-lg-3 col-6" data-wow-delay=".4s">
                     <div class="spacer-double sm-hide"></div>
@@ -112,7 +141,8 @@
 
                     <div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp">
                         <blockquote class="testimonial-big text-white">
-                            <span class="title">First and foremost, the team took the time to understand my vision and personal style. They asked thoughtful questions and really listened to my needs and preferences. This initial consultation gave me confidence that they would be able to create a space that reflected my personality and met my functional requirements.</span>
+                            <span class="title">Through a blend of creative insight and practical expertise, we curate color schemes, select furnishings, and arrange layouts that optimize spatial flow and aesthetic harmony. We collaborate closely with clients, understanding their preferences and needs to craft personalized design solutions that breathe life into rooms while considering factors like lighting, materials, and textures. Our ultimate goal is to create spaces that not only reflect individuality but also enrich daily experiences by merging beauty with purpose in every corner and detail.</span>
+                            <a href="{{url('/')}}/contact-us" class="btn-custom text-light wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Get a Free Quote </a>
                         </blockquote>
                     </div>
 

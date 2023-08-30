@@ -89,7 +89,7 @@
                             After: A stunning transformation took place, breathing new life into the interior. The room now exudes a sense of modern elegance and tranquility. The color palette incorporates soft neutrals and calming blues, reflecting light and creating an airy ambiance.
                         </p>
                         <div class="spacer10"></div>
-                        <a href="#" class="btn-line-white">View Details</a>
+                        <a style="border:solid #f37920" href="#" class="btn-line-white selected">View Details</a>
                     </div>
                 </div>
 
@@ -119,7 +119,7 @@
                         Call us now and let us do the Magic for you! We are flexible and will make the delivery of products / services at your workplace / residence or your preferred location and at your convinience!
                     </p>
                     <div class="spacer-half"></div>
-                    <a href="tel:+254 701 211 206" class="btn-line-white" style="border:1px solid #f37920; color:#f37920">Contact Us Now</a>
+                    <a href="tel:+254 701 211 206" class="btn-line-white" style="border:2px solid #f37920; color:#f37920">Contact Us Now</a>
                 </div>
                 <div class="col-lg-3 col-6" data-wow-delay=".4s">
                     <div class="spacer-double sm-hide"></div>
@@ -141,7 +141,8 @@
 
                     <div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp">
                         <blockquote class="testimonial-big text-white">
-                            <span class="title">First and foremost, the team took the time to understand my vision and personal style. They asked thoughtful questions and really listened to my needs and preferences. This initial consultation gave me confidence that they would be able to create a space that reflected my personality and met my functional requirements.</span>
+                            <span class="title">Through a blend of creative insight and practical expertise, we curate color schemes, select furnishings, and arrange layouts that optimize spatial flow and aesthetic harmony. We collaborate closely with clients, understanding their preferences and needs to craft personalized design solutions that breathe life into rooms while considering factors like lighting, materials, and textures. Our ultimate goal is to create spaces that not only reflect individuality but also enrich daily experiences by merging beauty with purpose in every corner and detail.</span>
+                            <a href="{{url('/')}}/contact-us" class="btn-custom text-light wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Get a Free Quote </a>
                         </blockquote>
                     </div>
 
