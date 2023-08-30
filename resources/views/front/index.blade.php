@@ -36,12 +36,41 @@
                 </div>
 
                 <div class="col-lg-4 wow fadeInRight" data-wow-delay=".6s">
-                    <p>
+                    <p style="font-size: 17px;">
                         We believe that a well-designed space has the power to inspire, uplift, and enhance the way we live and work. At our studio, we are passionate about creating captivating interiors that not only reflect your personal style but also optimize functionality and comfort.
-
-
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bgimage="url('{{asset('uploads/banners/Untitled.jpeg')}}')" class="text-light" data-stellar-background-ratio=".6">
+        <div class="wm wow fadeIn">Meglink</div>
+        <div class="container">
+
+
+            <div class="row g-0 align-items-center wow fadeInUp" data-bgcolor="rgba(20,20,20,.8)">
+
+                <div class="col-md-6 text-middle">
+                    <div class="padding50">
+                        <h3><span class="id-color">Interiors Before / After</span></h3>
+                        <p>
+                            Before: The space was characterized by outdated and worn-out furniture, faded wall paint, and limited natural light. The layout felt cramped and lacked cohesion, with mismatched decor and cluttered surfaces contributing to an overall sense of disarray. The room's potential was hidden behind its neglected appearance, leaving it devoid of comfort and style.
+                            <br>
+                            After: A stunning transformation took place, breathing new life into the interior. The room now exudes a sense of modern elegance and tranquility. The color palette incorporates soft neutrals and calming blues, reflecting light and creating an airy ambiance.
+                        </p>
+                        <div class="spacer10"></div>
+                        <a href="#" class="btn-line-white">View Details</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-middle">
+                    <div class="twentytwenty-container">
+                      <img style="min-height:400px" src="{{asset('uploads/before/1.jpg')}}" alt="" class="img-responsive" />
+                      <img style="min-height:400px" src="{{asset('uploads/before/2.jpg')}}" alt="" class="img-responsive" />
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

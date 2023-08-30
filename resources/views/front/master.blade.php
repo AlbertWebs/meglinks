@@ -120,7 +120,7 @@
                                                 @endforeach
                                             </ul>
                                         </li>
-                                        <li><a href="{{url('/contact-us')}}">Portfolio</a>
+                                        <li><a href="{{url('/')}}/our-portfolio">Portfolio</a>
 
 										</li>
 
@@ -145,7 +145,7 @@
        @yield('content')
 
         <!-- footer begin -->
-        <footer class="style-3">
+        <footer class="style-3" aria-label="section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
@@ -198,7 +198,8 @@
                     </div>
 
                     <div class="col-md-6 text-center">
-                        &copy; Copyright {{date('Y')}} - <span class="id-color">Meglink Ventures Limited</span> All Rights Reserved | Powered By <span class="id-color">Designekta Studios</span>
+                        &copy; Copyright {{date('Y')}} - <span class="id-color">Meglink Ventures Limited</span> All Rights Reserved
+                        {{-- | Powered By <span class="id-color">Designekta Studios</span> --}}
                     </div>
 
                     <div class="col-md-3 text-right">
