@@ -3,7 +3,7 @@
 jQuery(document).ready(function () {
     'use strict';				// use strict mode
 
-    var preloader = 1; // 1 - enable, 0 - disable
+    var preloader = 0; // 1 - enable, 0 - disable
     var smooth_scroll = 0; // 1 - enable, 0 - disable
     var de_header_style = 1; // 1 - solid, 2 - transparent
     var de_header_layout = 1; // 1 - default, 2 - extended
@@ -123,7 +123,6 @@ jQuery(document).ready(function () {
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
-
         fixedContentPos: false
     });
 
