@@ -55,7 +55,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-12 wow fadeInRight" data-wow-delay=".2s">
                     <div class="de_count ultra-big s2 text-center">
-                        <h3 style="color:#f37920" class="timer" data-to="18" data-speed="2000">0</h3>
+                        <h3 style="color:#f37920" class="timer" data-to="22" data-speed="2000">0</h3>
                         <span class="text-dark text-uppercase">Years of Experience</span>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                             After: A stunning transformation took place, breathing new life into the interior. The room now exudes a sense of modern elegance and tranquility. The color palette incorporates soft neutrals and calming blues, reflecting light and creating an airy ambiance.
                         </p>
                         <div class="spacer10"></div>
-                        <a style="border:solid #f37920" href="#" class="btn-line-white selected">View Details</a>
+                        <a style="border:solid #f37920" href="{{url('/')}}/our-portfolio/slung" class="btn-line-white selected">View Details</a>
                     </div>
                 </div>
 
