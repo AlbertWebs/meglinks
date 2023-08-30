@@ -106,7 +106,7 @@
 
 										</li>
 
-                                        <li><a href="{{url('/')}}">About Us<span></span></a>
+                                        <li><a href="{{url('/')}}/#section-about">About Us<span></span></a>
 
 										</li>
 
@@ -120,8 +120,8 @@
                                                 @endforeach
                                             </ul>
                                         </li>
-                                        <li><a href="{{url('/')}}/our-portfolio">Portfolio</a>
-
+                                        <li>
+                                            <a href="{{url('/')}}/our-portfolio">Portfolio</a>
 										</li>
 
                                         <li><a href="{{url('/')}}/our-portfolio">Laterst News</a>

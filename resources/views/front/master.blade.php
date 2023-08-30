@@ -106,8 +106,8 @@
 
 										</li>
 
-                                        <li><a href="{{url('/')}}">About Us<span></span></a>
-
+                                        <li>
+                                            <a href="{{url('/')}}/#section-about">About Us<span></span></a>
 										</li>
 
                                         <?php
