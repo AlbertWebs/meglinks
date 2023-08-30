@@ -61,7 +61,7 @@
     <div id="wrapper">
 
         <!-- header begin -->
-        <header class="transparent">
+        <header class="header-bottom">
             <div class="info">
                 <div class="container">
                     <div class="row">

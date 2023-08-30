@@ -30,7 +30,7 @@ class HomeController extends Controller
     public function home()
     {
         $hero = "slider";
-        return view('front.index', compact('hero'));
+        return view('front.index-1', compact('hero'));
     }
 
     public function contact()

@@ -3290,6 +3290,8 @@ left: 0;
 
 	h1.ultra-big{
 		font-size: 120px;
+        font-weight: 400;
+        vertical-align: middle;
 	}
 
 	h2 {
@@ -8624,7 +8626,7 @@ right:-15px;
   position: absolute;
   width: 22px;
   height: 42px;
-  bottom: 30px;
+  bottom: 130px;
   left: 50%;
   margin-left: -12px;
   border-radius: 15px;
