@@ -136,7 +136,7 @@
 								<!-- mainmenu close -->
 							</div>
                             <div class="md-flex-col col-extra" style="background-size: cover;">
-								<a href="{{url('/')}}" class="btn-on-header btn-line">Get Quote</a>
+								<a href="{{url('/contact-us')}}" class="btn-on-header btn-line">Get Quote</a>
 							</div>
 						</div>
 					</div>
