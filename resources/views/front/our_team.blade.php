@@ -127,7 +127,6 @@
                             </div>
                             <!-- team close -->
                         <div class="clearfix"></div>
-
                     </div>
                 </div>
             </div>

@@ -225,6 +225,7 @@
             <!-- portfolio filter close -->
         </div>
     </section>
+
 </div>
 
 @endsection

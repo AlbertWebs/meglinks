@@ -106,8 +106,13 @@
 
 										</li>
 
-                                        <li><a href="{{url('/')}}/#section-about">About Us<span></span></a>
-
+                                        <li>
+                                            <a href="{{url('/')}}/#section-about">About Us<span></span></a>
+                                            <ul>
+												<li>
+                                                    <a href="{{url('/')}}/our-team">Our Team</a>
+												</li>
+											</ul>
 										</li>
 
                                         <?php
