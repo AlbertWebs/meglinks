@@ -56,96 +56,76 @@
 
 <section>
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin:0 auto">
 
-            <div class="col-md-12">
-                <div class="row">
+            <div class="col-md-12" style="margin:0 auto">
+                <div class="row" style="margin:0 auto">
                     <div class="col-md-12 container-4 wow fadeInUp">
-                        <!-- team member -->
-                        <div class="de-team-list">
-                            <div class="team-pic">
-                                <img src="{{asset('themes/molly.jpeg')}}" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc">
-                                <h3>Molly Mugure</h3>
-                                <p class="lead">Administrator | PA</p>
-                                <div class="small-border"></div>
-                                <p>I am a diligent office administrator for Meglink Ventures, I call myself the backbone of our organizational efficiency and a friendly face to all who enter our workspace.</p>
+                            <!-- team member -->
+                            <div class="de-team-list">
+                                <div class="team-pic">
+                                    <img src="{{asset('themes/molly.jpeg')}}" class="img-responsive" alt="" />
+                                </div>
+                                <div class="team-desc">
+                                    <h3>Molly Mugure</h3>
+                                    <p class="lead">Administrator | PA</p>
+                                    <div class="small-border"></div>
+                                    <p>I am a diligent office administrator for Meglink Ventures, I call myself the backbone of our organizational efficiency and a friendly face to all who enter our workspace.</p>
 
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                    <div class="social">
+                                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- team close -->
+                            <!-- team close -->
 
-                        <!-- team member -->
-                        <div class="de-team-list">
-                            <div class="team-pic">
-                                <img src="{{asset('themes/images/team/team_pic_2.jpg')}}" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc">
-                                <h3>Violet Musau</h3>
-                                <p class="lead">Creative Director</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
+                            <!-- team member -->
+                            <div class="de-team-list">
+                                <div class="team-pic">
+                                    <img src="{{asset('themes/violet.jpeg')}}" class="img-responsive" alt="" />
+                                </div>
+                                <div class="team-desc">
+                                    <h3>Violet Musau</h3>
+                                    <p class="lead">Creative Director</p>
+                                    <div class="small-border"></div>
+                                    <p>
+                                        I combine artistic flair with strategic vision to craft compelling and innovative solutions that resonate with our clients and their target audiences.
+                                    </p>
 
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                    <div class="social">
+                                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- team close -->
+                            <!-- team close -->
 
-                        <!-- team member -->
-                        <div class="de-team-list">
-                            <div class="team-pic">
-                                <img src="{{asset('themes/images/team/team_pic_3.jpg')}}" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc">
-                                <h3>Sarah Michelle</h3>
-                                <p class="lead">Creative Staff</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                            <!-- team member -->
+                            <div class="de-team-list">
+                                <div class="team-pic">
+                                    <img src="{{asset('themes/adrian.jpeg')}}" class="img-responsive" alt="" />
+                                </div>
+                                <div class="team-desc">
+                                    <h3>Adrian Miaz</h3>
+                                    <p class="lead">Visualization Expert</p>
+                                    <div class="small-border"></div>
+                                    <p>
+                                        I am the 3D & Visualization expert at Meglink Ventures Limited, brings digital dreams to life with his unparalleled talent and attention to detail.
+                                    </p>
+                                    <div class="social">
+                                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- team close -->
-
-                        <!-- team member -->
-                        <div class="de-team-list">
-                            <div class="team-pic">
-                                <img src="{{asset('themes/images/team/team_pic_4.jpg')}}" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc">
-                                <h3>Katty Wilson</h3>
-                                <p class="lead">Creative Staff</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team close -->
-
+                            <!-- team close -->
                         <div class="clearfix"></div>
 
                     </div>
