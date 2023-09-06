@@ -55,7 +55,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-12 wow fadeInRight" data-wow-delay=".2s">
                     <div class="de_count ultra-big s2 text-center">
-                        <h3 style="color:#f37920" class="timer" data-to="22" data-speed="2000">0</h3>
+                        <h3 style="color:#f37920" class="timer" data-to="15" data-speed="2000">0</h3>
                         <span class="text-dark text-uppercase">Years of Experience</span>
                     </div>
                 </div>

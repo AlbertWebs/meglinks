@@ -25,5 +25,7 @@ Route::get('/our-portfolio', [App\Http\Controllers\HomeController::class, 'portf
 Route::get('/our-portfolio/slung', [App\Http\Controllers\HomeController::class, 'portfolio_slung'])->name('portfolio_slung');
 Route::get('/blogs/{slung}', [App\Http\Controllers\HomeController::class, 'blogs'])->name('blogs');
 Route::get('/project-details', [App\Http\Controllers\HomeController::class, 'project_details'])->name('project-details');
+Route::get('/our-team', [App\Http\Controllers\HomeController::class, 'our_team'])->name('our-team');
+
 
 Auth::routes();

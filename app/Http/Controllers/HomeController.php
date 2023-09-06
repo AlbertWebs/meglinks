@@ -60,6 +60,13 @@ class HomeController extends Controller
         return view('front.portfolio_details');
     }
 
+    public function our_team()
+    {
+        return view('front.our_team');
+    }
+
+
+
     public function excellence($slung)
     {
         $Service = DB::table('services')->where('slung',$slung)->get();

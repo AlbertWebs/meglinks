@@ -6,7 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Request Quotation</h1>
+                    {{-- <h1>Request Quotation</h1> --}}
+                    <h1>Contact Us</h1>
                     <ul class="crumb">
                         <li><a href="{{url('/')}}">Home</a></li>
                         <li class="sep">/</li>
@@ -27,7 +28,7 @@
                 <div class="col-md-8 offset-md-2">
                     <form name="contactForm" id='contact_form' method="post">
                         <div id="step-1" class="row">
-                            <div class="col-md-12 mb30">
+                            {{-- <div class="col-md-12 mb30">
                                 <h4><i class="fa fa-home id-color"></i>What is your property type?</h4>
 
                                 <div class="de_form de_radio">
@@ -56,9 +57,9 @@
                                         <label for="radio-1e"><img src="{{asset('themes/images/select-form/5.jpg')}}">Other</label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
-                            <div class="col-md-6 mb10">
+                            {{-- <div class="col-md-6 mb10">
                                 <h4><i class="fa fa-arrows-alt id-color"></i>Total area size you want to renovate</h4>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -73,21 +74,21 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
-                            <div class="col-md-6 mb10">
+                            {{-- <div class="col-md-6 mb10">
                                 <h4><i class="fa fa-tag id-color"></i>Select a renovation budget</h4>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <select name="Budget" id="budget" value="" class="form-control">
-                                          {{-- <option value="Budget Friendly">Budget Friendly</option> --}}
+
                                           <option value="Mid Range">Mid Range</option>
                                           <option value="High End">High End</option>
                                         </select>
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> --}}
 
                         </div>
 
@@ -120,7 +121,7 @@
                             <div class="col-md-12">
                                 <div class="g-recaptcha" data-sitekey="6LdW03QgAAAAAJko8aINFd1eJUdHlpvT4vNKakj6"></div>
                                 <p id='submit' class="mt20">
-                                    <input type='submit' id='send_message' value='Submit Form' class="btn btn-line">
+                                    <input type='submit' id='send_message' value='Send Request' class="btn btn-line">
                                 </p>
                             </div>
                         </div>
