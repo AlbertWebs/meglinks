@@ -26,7 +26,7 @@
             <div class="clearfix"></div>
 
             <div class="col-lg-5 offset-lg-1 mt-50 mb-sm-30 text-center wow fadeInUp">
-                <img class="img-fluid" src="{{asset('themes/User_icon_2.svg.png')}}" alt="" />
+                <img class="img-fluid" src="{{asset('themes/oile.jpeg')}}" alt="" />
             </div>
 
             <div class="col-lg-5 wow fadeInLeft" data-wow-delay=".5s">
