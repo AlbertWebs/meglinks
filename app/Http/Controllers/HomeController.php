@@ -76,10 +76,25 @@ class HomeController extends Controller
     public function blogs($slung)
     {
         $Blog = DB::table('blogs')->where('slung',$slung)->get();
-        return view('front.blogs', compact('Blog'));
+        return view('front.blog', compact('Blog'));
     }
 
 
+    public function latest_news()
+    {
+        $Blog = DB::table('blogs')->get();
+        return view('front.blogs', compact('Blog'));
+    }
+
+    public function meglink_homes()
+    {
+        return view('homes.index');
+    }
+
+    public function meglink_home()
+    {
+        return view('homes.home');
+    }
 
 
 

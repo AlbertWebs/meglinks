@@ -23,9 +23,11 @@ Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'
 Route::get('/center-of-excellence/{slung}', [App\Http\Controllers\HomeController::class, 'excellence'])->name('excellence');
 Route::get('/our-portfolio', [App\Http\Controllers\HomeController::class, 'portfolio'])->name('portfolio');
 Route::get('/our-portfolio/slung', [App\Http\Controllers\HomeController::class, 'portfolio_slung'])->name('portfolio_slung');
-Route::get('/blogs/{slung}', [App\Http\Controllers\HomeController::class, 'blogs'])->name('blogs');
+Route::get('/latest-news/{slung}', [App\Http\Controllers\HomeController::class, 'blogs'])->name('blogs');
 Route::get('/project-details', [App\Http\Controllers\HomeController::class, 'project_details'])->name('project-details');
 Route::get('/our-team', [App\Http\Controllers\HomeController::class, 'our_team'])->name('our-team');
-
+Route::get('/latest-news', [App\Http\Controllers\HomeController::class, 'latest_news'])->name('latest-news');
+Route::get('/meglink-homes', [App\Http\Controllers\HomeController::class, 'meglink_homes'])->name('meglink-homes');
+Route::get('/meglink-homes/{slung}', [App\Http\Controllers\HomeController::class, 'meglink_home'])->name('meglink-home');
 
 Auth::routes();
