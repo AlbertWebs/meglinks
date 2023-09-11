@@ -85,11 +85,11 @@
                                 <a class="bg-orange" href="#">For Rent</a>
                             </li>
                             <li class="ltn__blog-date">
-                                <i class="far fa-calendar-alt"></i>May 19, 2021
+                                <i class="far fa-calendar-alt"></i>May 1, 2023
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="#"><i class="far fa-comments"></i>35 Comments</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                     <h1>Diamond Manor Apartment</h1>
@@ -333,7 +333,7 @@
 
                     <h4 class="title-2">Location</h4>
                     <div class="property-details-google-map mb-60">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9334.271551495209!2d-73.97198251485975!3d40.668170674982946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b0456b5a2e7%3A0x68bdf865dda0b669!2sBrooklyn%20Botanic%20Garden%20Shop!5e0!3m2!1sen!2sbd!4v1590597267201!5m2!1sen!2sbd" width="100%" height="100%" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.201827138957!2d36.7876407!3d-1.2942408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f113d23794a97%3A0xb39310a139138d6!2sDesignekta%20Studios!5e0!3m2!1sen!2ske!4v1694420064800!5m2!1sen!2ske" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                     <h4 class="title-2">Floor Plans</h4>
@@ -521,9 +521,10 @@
                     <!-- APARTMENTS PLAN AREA END -->
 
                     <h4 class="title-2">Property Video</h4>
-                    <div class="ltn__video-bg-img ltn__video-popup-height-500 bg-overlay-black-50 bg-image mb-60" data-bs-bg="img/others/5.jpg')}}">
-                        <a class="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/eWUxqVFBq74?autoplay=1&amp;showinfo=0" data-rel="lightcase:myCollection">
+                    <div class="ltn__video-bg-img ltn__video-popup-height-500 bg-overlay-black-50 bg-image mb-60" data-bs-bg="{{asset('realestate/img/others/5.jpg')}}">
+                        <a class="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/CiVrBAnb9SU?autoplay=1&amp;showinfo=0" data-rel="lightcase:myCollection">
                             <i class="fa fa-play"></i>
+
                         </a>
                     </div>
                 </div>
