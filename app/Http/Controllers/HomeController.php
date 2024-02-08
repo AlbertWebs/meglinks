@@ -24,9 +24,18 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $Solutions = DB::table('solutions')->get();
         $hero = "video";
-        return view('front.index', compact('hero'));
+        return view('front.index', compact('hero','Solutions'));
     }
+
+
+    public function solutions($slung)
+    {
+        $Service = DB::table('solutions')->where('slung',$slung)->get();
+        return view('front.solution', compact('Service'));
+    }
+
     public function home()
     {
         $hero = "slider";

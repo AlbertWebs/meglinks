@@ -73,6 +73,46 @@
 
     </section>
 
+    <section id="section-services" class="no-top no-bottom" style="background-size: cover;">
+        <div class="container-fluid" style="background-size: cover;">
+          <div class="row" style="background-size: cover;">
+            <div class="col-md-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
+              <div class="carousel-4-center-dots owl-carousel owl-theme owl-loaded owl-drag" style="background-size: cover;">
+                <div class="owl-stage-outer" style="background-size: cover;">
+                  <div class="owl-stage" style="transition: all 0.25s ease 0s; width: 5422px; transform: translate3d(-1355px, 0px, 0px); background-size: cover;">
+                    @foreach($Solutions as $solutions)
+                    <div class="owl-item cloned" style="width: 357.25px; margin-right: 30px; background-size: cover; min-height:362px">
+                      <div class="d_custom-box jarallax item text-middle text-light" style="background-size: cover; position: relative; z-index: 0; min-height:362px" data-jarallax-original-styles="background-size: cover;">
+                        <div class="padding40 overlay60" style="background-size: cover; min-height:362px">
+                          <h3>{{$solutions->title}}</h3>
+                          <p>
+                            {!!html_entity_decode($solutions->content)!!}
+                          </p>
+                          <a href="{{url('/')}}/solutions/{{$solutions->slung}}" class="btn-line btn-fullwidth">Read More</a>
+                        </div>
+                        <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);">
+                          <img class="jarallax-img" src="{{asset('themes/images-interior-landing/services/se_3.jpg')}}" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 357.25px; height: 354.8px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 10.1px;">
+                        </div>
+                      </div>
+                    </div>
+                    @endforeach
+                  </div>
+                </div>
+                <br><br>
+                <div class="owl-nav disabled" style="background-size: cover;">
+                  <button type="button" role="presentation" class="owl-prev">
+                    <span aria-label="Previous">‹</span>
+                  </button>
+                  <button type="button" role="presentation" class="owl-next">
+                    <span aria-label="Next">›</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <section data-bgimage="url('{{asset('uploads/banners/Untitled.jpeg')}}')" class="text-light" data-stellar-background-ratio=".6">
         <div class="wm wow fadeIn">Meglink</div>
         <div class="container">
@@ -142,7 +182,7 @@
                     <div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp">
                         <blockquote class="testimonial-big text-white">
                             <span class="title">Through a blend of creative insight and practical expertise, we curate color schemes, select furnishings, and arrange layouts that optimize spatial flow and aesthetic harmony. We collaborate closely with clients, understanding their preferences and needs to craft personalized design solutions that breathe life into rooms while considering factors like lighting, materials, and textures. Our ultimate goal is to create spaces that not only reflect individuality but also enrich daily experiences by merging beauty with purpose in every corner and detail.</span>
-                            <a href="{{url('/')}}/contact-us" class="btn-custom text-light wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Get a Free Quote </a>
+                            <a href="{{url('/')}}/contact-us" class="btn-custom text-light wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"> Quote </a>
                         </blockquote>
                     </div>
 

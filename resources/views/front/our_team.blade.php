@@ -2,21 +2,52 @@
 
 @section('content')
  <!-- section begin -->
- <section id="section-welcome" class="full-height text-light" data-bgimage="url('{{url('/')}}/themes/images/pexels-matheus-bertelli-8533826.jpg')">
-
-    <div class="center-y">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="spacer-double"></div>
-                    <h2 class="style-3" style="color: #f37920; text-shadow:1px 0px 0px #ffffff">Where Talent Meets Dedication</h2>
-                    <div class="spacer-double"></div>
-                </div>
+ <!-- subheader -->
+ <section id="subheader" data-speed="8" data-type="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {{-- <h1>Request Quotation</h1> --}}
+                <h1>Who We Are</h1>
+                <ul class="crumb">
+                    <li><a href="{{url('/')}}">Home</a></li>
+                    <li class="sep">/</li>
+                    <li>About us</li>
+                </ul>
             </div>
         </div>
     </div>
+</section>
+<!-- subheader close -->
+
+<section id="section-no-bg" >
+    <div class="container" id="section-about">
+    <div class="row align-items-center">
+            <div class="col-md-5 wow fadeInRight" data-wow-delay=".2s">
+                <h2>About Us </h2>
+                <p class="lead">
+                    {{--  --}}
+                    At Meglink Ventures, we don't just design spaces; we create living experiences. With a deep-rooted passion for transforming interiors, our dedicated team of interior design consultants and contractors is your trusted partner in crafting spaces that reflect your unique vision and lifestyle.
+                    <br><br>
+                    Specializing in Kitchen Fittings, Wardrobes, Door Fittings, Gypsum Works, Paint Works, and Office Partitioning,
+                    Our expertise spans a diverse range of interior solutions. From the heart of the home to the heart of your workspace, we seamlessly blend innovation and functionality to breathe life into every project.<br><br>
+                    With an unwavering commitment to quality, creativity, and customer satisfaction, Meglink Ventures is where dreams meet reality. We take pride in turning your concepts into captivating designs and your spaces into inspiring environments.<br><br>
+
+                    Discover the art of interior transformation with Meglink Ventures, where every detail matters, and every project is a masterpiece in the making. Your vision, our expertise - together, we redefine the essence of interior design
+
+                    {{--  --}}
+                </p>
+                <div class="spacer-half"></div>
+                <a href="tel:+254 701 211 206" class="btn-line-white" style="border:2px solid #f37920; color:#f37920">Contact Us Now</a>
+            </div>
+            <div class="col-lg-6 col-6" data-wow-delay=".4s">
+                {{-- <div class="spacer-double sm-hide"></div> --}}
+                <img src="{{asset('uploads/pexels-vecislavas-popa.jpg')}}" alt="" class="img-responsive wow fadeInUp" data-wow-duration="1s">
+            </div>
 
 
+        </div>
+    </div>
 </section>
 <!-- section close -->
 <section id="section-agent" data-bgcolor="#edf7f1">
@@ -138,8 +169,8 @@
         <div class="row align-items-center">
             <div class="col-md-5 wow fadeInRight" data-wow-delay=".2s">
                 <h2 class="style-2"><span class="id-color">Our Expertise, Your Success</span></h2><br>
-                <h2>Uniting Forces for Excellence</h2>
-                <p class="lead">
+                <h2 style="color:#ffffff">Uniting Forces for Excellence</h2>
+                <p class="lead btn-line-white" style="color:#ffffff">
                     At Meglink Ventures Limited, our team is the driving force behind our success. Comprised of dedicated professionals from diverse backgrounds, we are united by a common purpose: to deliver exceptional solutions and unparalleled service to our clients.
 
                     Our team is not just a collection of individuals; we are a close-knit family. We foster a collaborative and inclusive environment where every member's unique skills and perspectives are valued. This diversity of thought fuels our creativity and drives innovation, allowing us to stay at the forefront of our industry.
@@ -148,7 +179,7 @@
                 <a href="#" class="btn-line-white">Contact Us Now</a>
             </div>
             <div class="col-md-6 offset-md-1 wow fadeInLeft" data-wow-delay=".4s">
-                <figure class="picframe invert transparent shadow-soft rounded">
+                {{-- <figure class="picframe invert transparent shadow-soft rounded">
                         <span class="v-center">
                             <span>
                                 <a id="play-video" class="video-play-button popup-youtube" href="https://www.youtube.com/watch?v=CmCIZ_aUAeQ">
@@ -156,8 +187,8 @@
                                 </a>
                             </span>
                         </span>
-                <img src="{{asset('themes/images-interior-landing/misc/1.jpg')}}" class="img-fullwidth" alt="">
-            </figure>
+                    <img src="{{asset('themes/images-interior-landing/misc/1.jpg')}}" class="img-fullwidth" alt="">
+                </figure> --}}
             </div>
         </div>
     </div>

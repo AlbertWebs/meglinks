@@ -30,13 +30,13 @@
                     <?php
                         $Other = DB::table('services')->get()
                     ?>
-                    @foreach ($Other as $other)
+                    {{-- @foreach ($Other as $other)
                     @if($other->id == $service->id)
                     <li class="active"><a href="{{url('/')}}/center-of-excellence/{{$other->slung}}">{{$other->caption}}</a></li>
                     @else
                     <li><a href="{{url('/')}}/center-of-excellence/{{$other->slung}}">{{$other->caption}}</a></li>
                     @endif
-                    @endforeach
+                    @endforeach --}}
 
                     @foreach ($Other as $other)
                     @if($other->id == $service->id)
@@ -57,7 +57,7 @@
                     </div>
                     <div class="col-md-6 pic-services wow fadeInUp" data-wow-delay=".6s">
                         <img src="{{asset('themes/images/services/p4_a.jpg')}}" class="img-responsive" alt="">
-                        <img src="{{asset('themes/images/services/p3_a.jpg')}}" class="img-responsive" alt="">
+                        {{-- <img src="{{asset('themes/images/services/p3_a.jpg')}}" class="img-responsive" alt=""> --}}
                     </div>
                 </div>
             </div>

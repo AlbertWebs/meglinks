@@ -21,6 +21,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name(
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 Route::get('/center-of-excellence/{slung}', [App\Http\Controllers\HomeController::class, 'excellence'])->name('excellence');
+Route::get('/solutions/{slung}', [App\Http\Controllers\HomeController::class, 'solutions'])->name('solutions');
 Route::get('/our-portfolio', [App\Http\Controllers\HomeController::class, 'portfolio'])->name('portfolio');
 Route::get('/our-portfolio/slung', [App\Http\Controllers\HomeController::class, 'portfolio_slung'])->name('portfolio_slung');
 Route::get('/latest-news/{slung}', [App\Http\Controllers\HomeController::class, 'blogs'])->name('blogs');
