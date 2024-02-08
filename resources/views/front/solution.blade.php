@@ -3,7 +3,7 @@
 @section('content')
 @foreach ($Service as $service)
   <!-- subheader -->
-<section id="subheader" data-speed="8" data-type="background">
+<section id="subheader" data-speed="8" data-type="background" style="background-image: url('{{url('/')}}/uploads/solutions/banners-modified.jpg'); background-position:center center;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

@@ -1,5 +1,6 @@
         <?php
             $Services = DB::table('services')->get();
+            $Solutions = DB::table('solutions')->get();
         ?>
         <footer class="style-3" aria-label="section">
             <div class="container">
@@ -11,12 +12,22 @@
 
 
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-2">
                         <div class="widget widget_recent_post">
                             <h3>Our Services</h3>
                             <ul>
                                 @foreach ($Services as $services)
                                 <li><a href="{{url('/')}}/center-of-excellence/{{$services->slung}}">{!!html_entity_decode($services->caption)!!}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="widget widget_recent_post">
+                            <h3>Solutions</h3>
+                            <ul>
+                                @foreach ($Solutions as $solutions)
+                                <li><a href="{{url('/')}}/solutions/{{$solutions->slung}}">{!!html_entity_decode($solutions->title)!!}</a></li>
                                 @endforeach
                             </ul>
                         </div>

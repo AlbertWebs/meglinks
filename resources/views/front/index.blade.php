@@ -91,7 +91,7 @@
                           <a href="{{url('/')}}/solutions/{{$solutions->slung}}" class="btn-line btn-fullwidth">Read More</a>
                         </div>
                         <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);">
-                          <img class="jarallax-img" src="{{asset('themes/images-interior-landing/services/se_3.jpg')}}" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 357.25px; height: 354.8px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 10.1px;">
+                          <img class="jarallax-img" src="{{url('/')}}/uploads/solutions/{{$solutions->image}}" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 357.25px; height: 354.8px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 10.1px;">
                         </div>
                       </div>
                     </div>
@@ -159,7 +159,7 @@
                         Call us now and let us do the Magic for you! We are flexible and will make the delivery of products / services at your workplace / residence or your preferred location and at your convinience!
                     </p>
                     <div class="spacer-half"></div>
-                    <a href="tel:+254 701 211 206" class="btn-line-white" style="border:2px solid #f37920; color:#f37920">Contact Us Now</a>
+                    <a href="{{url('/')}}/our-team" class="btn-line-white" style="border:2px solid #f37920; color:#f37920">Explore</a>
                 </div>
                 <div class="col-lg-3 col-6" data-wow-delay=".4s">
                     <div class="spacer-double sm-hide"></div>

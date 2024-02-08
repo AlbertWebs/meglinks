@@ -39,9 +39,9 @@
 
 										</li>
 
-                                        <li><a href="{{url('/')}}/latest-news">Laterst News</a>
+                                        {{-- <li><a href="{{url('/')}}/latest-news">Laterst News</a>
 
-                                        </li>
+                                        </li> --}}
 
 										<li><a href="{{url('/contact-us')}}">Contact</a>
 
