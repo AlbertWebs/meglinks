@@ -74,8 +74,8 @@
                                     </div>
 
                                     <div class="col-md-6 text-middle">
-                                        <div class="twentytwenty-containers">
-                                        <img src="{{asset('themes/images/before-after/1b.jpg')}}" alt="" class="img-responsive" />
+                                        <div class="twentytwenty-containers" >
+                                            <img class="img-responsive" style="height:322px; width:483px; object-fit:cover !important;" src="{{url('/')}}/uploads/solutions/{{$extra->image}}" alt=""  />
                                         </div>
                                     </div>
 
@@ -84,7 +84,7 @@
                                 <div class="row align-items-center g-0 wow fadeInUp" data-bgcolor="rgba(255,255,255)">
                                     <div class="col-md-6 text-middle">
                                         <div class="twentytwenty-containers">
-                                        <img src="{{asset('themes/images/before-after/2a.jpg')}}" alt="" class="img-responsive" />
+                                        <img style="height:322px; width:483px; object-fit:cover !important;" src="{{url('/')}}/uploads/solutions/{{$extra->image}}" alt="" class="img-responsive" />
                                         </div>
                                     </div>
 
