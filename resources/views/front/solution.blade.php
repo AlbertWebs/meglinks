@@ -78,7 +78,6 @@
                                             <img class="img-responsive" style="height:322px; width:483px; object-fit:cover !important;" src="{{url('/')}}/uploads/solutions/{{$extra->image}}" alt=""  />
                                         </div>
                                     </div>
-
                                 </div>
                             @else
                                 <div class="row align-items-center g-0 wow fadeInUp" data-bgcolor="rgba(255,255,255)">
@@ -93,9 +92,7 @@
                                             {!!html_entity_decode($extra->content)!!}
                                         </div>
                                     </div>
-
                                 </div>
-
                             @endif
                             <?php
                                      $$extraOrder = $extraOrder++

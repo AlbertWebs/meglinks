@@ -772,8 +772,13 @@ jQuery(document).ready(function () {
             center: true,
 			items:4,
 			loop:true,
-			dots: true,
+			dots: false,
 			margin:30,
+            autoplay: true,
+            slideTransition: 'linear',
+            autoplayTimeout: 3000,
+            autoplaySpeed: 3000,
+            autoplayHoverPause: true,
 			responsive:{
 				1000:{
 					items:4

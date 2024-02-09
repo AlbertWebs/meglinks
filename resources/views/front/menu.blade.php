@@ -5,7 +5,7 @@
 										</li>
 
                                         <li>
-                                            <a href="{{url('/')}}/#section-about">About Us<span></span></a>
+                                            <a href="{{url('/')}}/our-team">About Us<span></span></a>
 
 										</li>
 

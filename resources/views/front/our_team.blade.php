@@ -60,32 +60,36 @@
                 <img class="img-fluid" src="{{asset('themes/oile.jpeg')}}" alt="" />
             </div>
 
-            <div class="col-lg-5 wow fadeInLeft" data-wow-delay=".5s">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay=".5s" >
                 <h3 class="mb-2">Onyango Oile</h3>
                 <i>Lead Consultant</i>
                 <div class="spacer-half"></div>
                 <p>
-                    Onyango Oile is an accomplished interior design consultant known for their innovative approach to transforming spaces. With a keen eye for aesthetics and a deep understanding of design principles, Onyango Oile brings a unique blend of creativity and functionality to every project. Their ability to harmonize colors, textures, and furnishings creates captivating interiors that reflect individual personalities and enhance the overall ambiance of any space. With a commitment to excellence and a passion for creating beautiful, functional environment.
+                    Onyango Oile is an accomplished interior design consultant known for their innovative approach to transforming spaces.
+                    <br><br>
+                    With a keen eye for aesthetics and a deep understanding of design principles, Onyango Oile brings a unique blend of creativity and functionality to every project.
+                    <br><br>
+                     Their ability to harmonize colors, textures, and furnishings creates captivating interiors that reflect individual personalities and enhance the overall ambiance of any space. With a commitment to excellence and a passion for creating beautiful, functional environment.
                 </p>
 
-                <a href="#" class="de-icon-cap">
+                {{-- <a href="#" class="de-icon-cap">
                     <i class="fa id-color fa-phone"></i>
                     <h5>0737211206</h5>
                 </a>
                 <a href="#" class="de-icon-cap">
                     <i class="fa id-color fa-envelope-o"></i>
                     <h5>oile@meglinkventures.co.ke</h5>
-                </a>
+                </a> --}}
 
                 <div class="spacer-single"></div>
 
-                <a href="tel:0737211206" class="btn-custom text-light">Call Now</a>
+                {{-- <a href="tel:0737211206" class="btn-custom text-light">Call Now</a> --}}
             </div>
         </div>
     </div>
 </section>
 
-<section>
+<section id="team">
     <div class="container">
         <div class="row" style="margin:0 auto">
 

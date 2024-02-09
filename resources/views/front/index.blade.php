@@ -81,32 +81,24 @@
                 <div class="owl-stage-outer" style="background-size: cover;">
                   <div class="owl-stage" style="transition: all 0.25s ease 0s; width: 5422px; transform: translate3d(-1355px, 0px, 0px); background-size: cover;">
                     @foreach($Solutions as $solutions)
-                    <div class="owl-item cloned" style="width: 357.25px; margin-right: 30px; background-size: cover; min-height:362px">
-                      <div class="d_custom-box jarallax item text-middle text-light" style="background-size: cover; position: relative; z-index: 0; min-height:362px" data-jarallax-original-styles="background-size: cover;">
-                        <div class="padding40 overlay60" style="background-size: cover; min-height:362px">
-                          <h3>{{$solutions->title}}</h3>
-                          <p>
-                            {!!html_entity_decode($solutions->content)!!}
-                          </p>
-                          <a href="{{url('/')}}/solutions/{{$solutions->slung}}" class="btn-line btn-fullwidth">Read More</a>
+                        <div class="owl-item cloned" style="width: 357.25px; margin-right: 30px; background-size: cover; min-height:362px">
+                        <div class="d_custom-box jarallax item text-middle text-light" style="background-size: cover; position: relative; z-index: 0; min-height:362px" data-jarallax-original-styles="background-size: cover;">
+                            <div class="padding40 overlay60" style="background-size: cover; min-height:362px">
+                            <h3>{{$solutions->title}}</h3>
+                            <p>
+                                {!!html_entity_decode($solutions->content)!!}
+                            </p>
+                            <a href="{{url('/')}}/solutions/{{$solutions->slung}}" class="btn-line btn-fullwidth">Read More</a>
+                            </div>
+                            <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);">
+                            <img class="jarallax-img" src="{{url('/')}}/uploads/solutions/{{$solutions->image}}" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 357.25px; height: 354.8px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 10.1px;">
+                            </div>
                         </div>
-                        <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);">
-                          <img class="jarallax-img" src="{{url('/')}}/uploads/solutions/{{$solutions->image}}" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 357.25px; height: 354.8px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 10.1px;">
                         </div>
-                      </div>
-                    </div>
                     @endforeach
                   </div>
                 </div>
                 <br><br>
-                <div class="owl-nav disabled" style="background-size: cover;">
-                  <button type="button" role="presentation" class="owl-prev">
-                    <span aria-label="Previous">‹</span>
-                  </button>
-                  <button type="button" role="presentation" class="owl-next">
-                    <span aria-label="Next">›</span>
-                  </button>
-                </div>
               </div>
             </div>
           </div>
@@ -116,30 +108,19 @@
     <section data-bgimage="url('{{asset('uploads/banners/Untitled.jpeg')}}')" class="text-light" data-stellar-background-ratio=".6">
         <div class="wm wow fadeIn">Meglink</div>
         <div class="container">
-
-
             <div class="row g-0 align-items-center wow fadeInUp" data-bgcolor="rgba(20,20,20,.8)">
-
-                <div class="col-md-6 text-middle">
-                    <div class="padding50">
-                        <h3><span class="id-color">Interiors Before / After</span></h3>
+                <div class="col-md-10 text-middle" style="margin:0 auto">
+                    <div class="padding50" style="text-align:center">
+                        <h3><span class="id-color">Proffessional Team</span></h3>
                         <p>
-                            Before: The space was characterized by outdated and worn-out furniture, faded wall paint, and limited natural light. The layout felt cramped and lacked cohesion, with mismatched decor and cluttered surfaces contributing to an overall sense of disarray. The room's potential was hidden behind its neglected appearance, leaving it devoid of comfort and style.
-                            <br>
-                            After: A stunning transformation took place, breathing new life into the interior. The room now exudes a sense of modern elegance and tranquility. The color palette incorporates soft neutrals and calming blues, reflecting light and creating an airy ambiance.
+                            Our team is more than a group of professionals; we're a close-knit family driven by a shared love for design and
+                            a desire to create spaces that resonate with our clients. We bring a diverse range of skills, perspectives, and experiences to the table, making us a formidable force in the world of interior design.
+                            From designers to project managers, we collaborate seamlessly to turn your dreams into reality.
                         </p>
                         <div class="spacer10"></div>
-                        <a style="border:solid #f37920" href="{{url('/')}}/our-portfolio/slung" class="btn-line-white selected">View Details</a>
+                        <a style="border:solid #f37920" href="{{url('/')}}/our-team#team" class="btn-line-white selected">Meet Our Team</a>
                     </div>
                 </div>
-
-                <div class="col-md-6 text-middle">
-                    <div class="twentytwenty-container">
-                      <img style="min-height:400px" src="{{asset('uploads/before/1.jpg')}}" alt="" class="img-responsive" />
-                      <img style="min-height:400px" src="{{asset('uploads/before/2.jpg')}}" alt="" class="img-responsive" />
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -152,7 +133,7 @@
                 <div class="col-md-5 wow fadeInRight" data-wow-delay=".2s">
                     <h2>Expericence Elegance Beyond </h2>
                     <p class="lead">
-                        We all desire that our homes, offices etc. should have a gorgeous and presentable look.
+                        We all desire that our homes, offices etc. should have a gorgeous and presentable look.<br><br>
                         We all want that anybody who enters our house, office etc should appreciate its interiors and décor.
                         But that could only be possible if the interiors of our homes are designed in a manner which attracts appreciations and praises.<br><br>
                         Meglink Ventures is the best suited interior designer that stands out in both the local and international market.
@@ -173,7 +154,37 @@
         </div>
     </section>
 
-    <section id="section-testimonial" class="jarallax" data-bgimage="url('{{asset('themes/2.jpg')}}') fixed" aria-label="section">
+    <section id="section-how-it-works" data-bgimage="url('{{asset('themes/images-interior-landing/bg/2-modified.jpg')}}') fixed center" data-stellar-background-ratio=".2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 wow fadeInRight" data-wow-delay=".2s">
+                    <h2 class="style-2"><span class="id-color">Our Expertise, Your Success</span></h2><br>
+                    <h2 style="color:#ffffff">Uniting Forces for Excellence</h2>
+                    <p class="lead btn-line-white" style="color:#ffffff">
+                        At Meglink Ventures Limited, our team is the driving force behind our success. Comprised of dedicated professionals from diverse backgrounds, we are united by a common purpose: to deliver exceptional solutions and unparalleled service to our clients.
+                        <br><br>
+                        Our team is not just a collection of individuals; we are a close-knit family. We foster a collaborative and inclusive environment where every member's unique skills and perspectives are valued. This diversity of thought fuels our creativity and drives innovation, allowing us to stay at the forefront of our industry.
+                    </p>
+                    <div class="spacer-half"></div>
+                    <a href="{{url('/')}}/our-portfolio" class="btn-line-white">Our Portfolios</a>
+                </div>
+                <div class="col-md-6 offset-md-1 wow fadeInLeft" data-wow-delay=".4s">
+                    <figure class="picframe invert transparent shadow-soft rounded">
+                            <span class="v-center">
+                                <span>
+                                    <a id="play-video" class="video-play-button popup-youtube" href="https://www.youtube.com/watch?v=CmCIZ_aUAeQ">
+                                        <span></span>
+                                    </a>
+                                </span>
+                            </span>
+                        <img src="{{asset('themes/images-interior-landing/bg/door-2.jpg')}}" class="img-fullwidth" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- <section id="section-testimonial" class="jarallax" data-bgimage="url('{{asset('themes/2.jpg')}}') fixed" aria-label="section">
         <div class="container">
             <div class="row">
 
@@ -191,7 +202,7 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
 
     <section>
         <div class="container">
@@ -199,9 +210,20 @@
             <div class="row">
                 <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".3s">
                     <h2>Our Latest Projects</h2>
-                    <p class="lead">In our portfolio, you will discover a diverse range of styles, from sleek and contemporary to warm and rustic, all carefully curated to reflect the individuality of our clients. Whether it's a cozy living room, a vibrant office space, or a luxurious bedroom, we strive to create environments that inspire, comfort, and delight.</p>
+                    <p class="lead">
+                        In our portfolio, you will discover a diverse range of styles, from sleek and contemporary to warm and rustic, all carefully curated to reflect the individuality of our clients.
 
-                    <p class="lead">In our portfolio, you will discover a diverse range of styles, from sleek and contemporary to warm and rustic, all carefully curated to reflect the individuality of our clients. Whether it's a cozy living room, a vibrant office space, or a luxurious bedroom, we strive to create environments that inspire, comfort, and delight.</p>
+                    </p>
+
+                    <p class="lead">
+                        Our expertise spans a diverse range of interior solutions. From the heart of the home to the heart of your workspace, we seamlessly blend innovation and functionality to breathe life into every project.
+                        With an unwavering commitment to quality, creativity, and customer satisfaction, Meglink Ventures is where dreams meet reality.
+                        <br><br>
+                        We take pride in turning your concepts into captivating designs and your spaces into inspiring environments.
+
+                        Discover the art of interior transformation with Meglink Ventures, where every detail matters, and every project is a masterpiece in the making.
+
+                    </p>
                 </div>
 
                 <div class="col-lg-8 wow fadeInLeft">
