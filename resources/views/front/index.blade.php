@@ -111,7 +111,7 @@
             <div class="row g-0 align-items-center wow fadeInUp" data-bgcolor="rgba(20,20,20,.8)">
                 <div class="col-md-10 text-middle" style="margin:0 auto">
                     <div class="padding50" style="text-align:center">
-                        <h3><span class="id-color">Proffessional Team</span></h3>
+                        <h3><span class="id-color">Professional Team</span></h3>
                         <p>
                             Our team is more than a group of professionals; we're a close-knit family driven by a shared love for design and
                             a desire to create spaces that resonate with our clients. We bring a diverse range of skills, perspectives, and experiences to the table, making us a formidable force in the world of interior design.
@@ -137,7 +137,7 @@
                         We all want that anybody who enters our house, office etc should appreciate its interiors and décor.
                         But that could only be possible if the interiors of our homes are designed in a manner which attracts appreciations and praises.<br><br>
                         Meglink Ventures is the best suited interior designer that stands out in both the local and international market.
-                        Call us now and let us do the Magic for you! We are flexible and will make the delivery of products / services at your workplace / residence or your preferred location and at your convinience!
+                        Call us now and let us do the magic for you. We are flexible and will make the delivery of products / services at your workplace / residence or your preferred location and at your convinience.
                     </p>
                     <div class="spacer-half"></div>
                     <a href="{{url('/')}}/our-team" class="btn-line-white" style="border:2px solid #f37920; color:#f37920">Explore</a>
